@@ -1,0 +1,10 @@
+{
+    "appName": {
+      "message": "SWUFE、CFF：显示会议/期刊等级",
+      "description": "The title of the application, displayed in the web store."
+    },
+    "appDesc": {
+      "message": "支持在 Springer、 DBLP、IEEExplore 和 ACM DL 上显示 CCF 等级，在知网上显示SWUFE等级",
+      "description":"The description of the application, displayed in the web store."
+    }
+  }
