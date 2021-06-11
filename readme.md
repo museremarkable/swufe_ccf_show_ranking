@@ -28,6 +28,14 @@
 
   在此不做演示，请前往[show-rank](https://github.com/hnshhslsh/show-rank)仓库查看
 
+### 想要自定义数据？
+
+- 点个小星星 + fork
+- 修改data下的**swufeRankingName.js**中的数据
+
+- 利用编辑器功能，进行**所有文件全局替换**，将swufe替换为自己学校的名称缩写
+- 更换logo下的图片，请注意像素大小应该相同
+
 ### 数据来源
 
 - CCF:  [magichan](https://github.com/magichan/CCF-Recommended-Catalog-2019) for CCF Rank data / 提供CCF排名数据
