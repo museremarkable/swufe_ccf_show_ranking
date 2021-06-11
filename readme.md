@@ -28,7 +28,7 @@
 
   在此不做演示，请前往[show-rank](https://github.com/hnshhslsh/show-rank)仓库查看
 
-### 想要自定义数据？
+### 想要自定义知网的等级数据？
 
 - 点个小星星 + fork
 - 修改data下的**swufeRankingName.js**中的数据
