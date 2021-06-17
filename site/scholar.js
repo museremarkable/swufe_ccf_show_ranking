@@ -28,6 +28,8 @@ const scholar = {};
 
 scholar.rankSpanList = [];
 
+scholar.rankSpanListSwufe = [];
+
 scholar.run = function () {
   let url = window.location.pathname;
   if (url == "/scholar") {
@@ -54,7 +56,11 @@ scholar.appendRank = function () {
       .split(" ");
     let author = data[1];
     let year = data.slice(-3)[0];
-    fetchRank(node, title, author, year);
+    let pattern = /(?<=- ).*?(?=, [0-9]{4})/;
+    let journal = $(this)
+      .find("div.gs_a")
+      .text().match(pattern)
+    fetchRank(node, title, author, year, journal);
   });
 };
 
@@ -75,7 +81,7 @@ scholar.appendRanks = function () {
   });
 };
 
-function fetchRank(node, title, author, year) {
+function fetchRank(node, title, author, year, journal) {
   var xhr = new XMLHttpRequest();
   api_format = "https://dblp.org/search/publ/api?q=" + encodeURIComponent(title + " " + author) + "&format=json";
   xhr.open("GET", api_format, true);
@@ -129,4 +135,13 @@ function fetchRank(node, title, author, year) {
     }
   };
   xhr.send();
+
+  if(journal!=null){
+    journal_str = journal[0];
+    if(journal_str.match("…")===null){
+        for (let getRankSpan of scholar.rankSpanListSwufe) {
+        $(node).after(getRankSpan(journal_str.toUpperCase()));
+      }
+    }
+  };
 };
