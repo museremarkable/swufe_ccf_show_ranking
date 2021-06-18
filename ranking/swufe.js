@@ -9,7 +9,8 @@ swufe.getRankingInfo = function(name) {
 	let ranking = swufe.rankingFullName[name];
 	if (ranking == null) {
 		ranking = ""
-	} else {
+	}
+	else {
 		ranking = "swufe " + ranking;
 	}
 
@@ -22,10 +23,16 @@ swufe.getRankingInfoEn = function(name) {
 	let rankingInfo = {};
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
-
 	let ranking = swufe.rankingFullNameEn[name];
 	if (ranking == null) {
 		ranking = ""
+		var pattern = /(?<=THE ).*/;
+		if (name.match(pattern)[0]){
+			var new_ranking = swufe.rankingFullNameEn[name.match(pattern)[0]];
+			if (new_ranking){
+				ranking = "swufe " + new_ranking;
+			}
+		}
 	} else {
 		ranking = "swufe " + ranking;
 	}
