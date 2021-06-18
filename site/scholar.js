@@ -59,8 +59,10 @@ scholar.appendRank = function () {
     let pattern = /(?<=- ).*?(?=, [0-9]{4})/;
     let journal = $(this)
       .find("div.gs_a")
-      .text().match(pattern)
-    fetchRank(node, title, author, year, journal);
+      .text().match(pattern);
+    let q_key_pattern = /(?<=related:).*?(?=:scholar)/;
+    let q_key = $(this).find('div.gs_fl > a:nth-child(4)').attr('href').toString().match(q_key_pattern);
+    fetchRank(node, title, author, year, journal, q_key);
   });
 };
 
@@ -81,7 +83,7 @@ scholar.appendRanks = function () {
   });
 };
 
-function fetchRank(node, title, author, year, journal) {
+function fetchRank(node, title, author, year, journal, q_key) {
   var xhr = new XMLHttpRequest();
   api_format = "https://dblp.org/search/publ/api?q=" + encodeURIComponent(title + " " + author) + "&format=json";
   xhr.open("GET", api_format, true);
@@ -141,6 +143,29 @@ function fetchRank(node, title, author, year, journal) {
     if(journal_str.match("…")===null){
         for (let getRankSpan of scholar.rankSpanListSwufe) {
         $(node).after(getRankSpan(journal_str.toUpperCase()));
+      }
+    }
+    else {
+      if(q_key){
+        let code = q_key[0];
+        cite_api_format="https://scholar.google.com.hk/scholar?q=info:"+ code +":scholar.google.com/&output=cite&scirp=0&hl=zh-CN";
+        var cite_xhr = new XMLHttpRequest();
+        cite_xhr.open("GET", cite_api_format, true);
+        cite_xhr.onreadystatechange = function () {
+        if (cite_xhr.readyState == 4) {
+          var resp = cite_xhr.responseText;
+          if (resp){
+          var journal = resp.match(/(?<=]. ).*?(?=, [0-9]{4})/);
+          if(journal){
+            journal_str = journal[0];
+            for (let getRankSpan of scholar.rankSpanListSwufe) {
+            $(node).after(getRankSpan(journal_str.toUpperCase()));
+    }
+          }
+        }
+        }
+        }
+        cite_xhr.send();
       }
     }
   };

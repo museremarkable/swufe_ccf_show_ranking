@@ -27,7 +27,7 @@ swufe.getRankingInfoEn = function(name) {
 	if (ranking == null) {
 		ranking = ""
 		var pattern = /(?<=THE ).*/;
-		if (name.match(pattern)[0]){
+		if (name.match(pattern)){
 			var new_ranking = swufe.rankingFullNameEn[name.match(pattern)[0]];
 			if (new_ranking){
 				ranking = "swufe " + new_ranking;
