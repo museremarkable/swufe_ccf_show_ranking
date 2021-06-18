@@ -148,7 +148,7 @@ function fetchRank(node, title, author, year, journal, q_key) {
     else {
       if(q_key){
         let code = q_key[0];
-        cite_api_format="https://scholar.google.com.hk/scholar?q=info:"+ code +":scholar.google.com/&output=cite&scirp=0&hl=zh-CN";
+        cite_api_format = document.location.hostname + "?q=info:"+ code +":scholar.google.com/&output=cite&scirp=0&hl=zh-CN";
         var cite_xhr = new XMLHttpRequest();
         cite_xhr.open("GET", cite_api_format, true);
         cite_xhr.onreadystatechange = function () {
