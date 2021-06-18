@@ -1,10 +1,10 @@
 {
     "appName": {
-      "message": "Show Conference/Journal Ranking",
+      "message": "SWUFE, CFF: Show conference/journal levels",
       "description": "The title of the application, displayed in the web store."
     },
     "appDesc": {
-      "message": "Show conference/journal rankings in search results. Currently supports CCF rankings on Springer, DBLP, IEEExplore and ACM DL.",
+      "message": "Support CCF level display on Google Academic, Springer, DBLP, IEEEExplore and ACM DL, and SWUFE level display on CNet and Google Academic.",
       "description":"The description of the application, displayed in the web store."
     }
   }
