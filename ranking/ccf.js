@@ -51,9 +51,16 @@ ccf.getRankingClass = function (rankings){
 
 ccf.getRankingSpan = function(names) {
     let rankingInfo = ccf.getRankingInfo(names);
-    let span = $('<span>').addClass('ccf-ranking').addClass(ccf.getRankingClass(rankingInfo.rankings)).text('CCF ' + rankingInfo.rankings.join('/'));
+    if(rankingInfo.rankings.join('/')!="none"){
+        var span = $('<span>').addClass('ccf-ranking').addClass(ccf.getRankingClass(rankingInfo.rankings)).text('CCF ' + rankingInfo.rankings.join('/'));
     if (rankingInfo.info.length != 0) {
         span.addClass('ccf-tooltip').append($('<pre>').addClass('ccf-tooltiptext').text(rankingInfo.info));
     }
+    }
+    else {
+        var span = $('<span>').addClass('ccf-ranking').addClass(ccf.getRankingClass(rankingInfo.rankings));
+        span.css('display','none');
+    }
+
     return span;
 }
