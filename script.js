@@ -10,6 +10,7 @@ if(location.href.startsWith("https://ieeexplore.ieee.org/search/searchresult.jsp
     dblp.start();
 } else if(location.href.startsWith("https://link.springer.com/search")){
     springer.rankingSpanProvider.push(ccf.getRankingSpan);
+	springer.rankSpanListSwufe.push(swufe.getRankingSpanEn);
     springer.start();
 } else if(location.href.startsWith("https://www.engineeringvillage.com/search")){
     ei.rankingSpanProvider.push(ccf.getRankingSpan);
