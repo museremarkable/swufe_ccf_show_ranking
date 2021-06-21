@@ -19,6 +19,7 @@
     "content_scripts": [
         {
             "matches": [
+				"https://academic.microsoft.com/*",
 				"https://webvpn.swufe.edu.cn/https/77726476706e69737468656265737421fbf952d2243e635930068cb8/*",
 				"https://kns.cnki.net/kns8/defaultresult/*",
                 "https://ieeexplore.ieee.org/*",
@@ -120,6 +121,7 @@
                 "site/springer.js",
                 "site/scholar.js",
                 "site/zhiwang.js",
+				"site/microsoft.js",
                 "data/ccf-index.js",
                 "data/ccf-rank.js",
 				"data/swufeRankingName.js",

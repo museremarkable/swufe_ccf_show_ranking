@@ -26,4 +26,7 @@ if(location.href.startsWith("https://ieeexplore.ieee.org/search/searchresult.jsp
 	) || location.href.startsWith("https://kns.cnki.net/kns8/defaultresult")) {
 	zhiwang.rankingSpanProvider.push(swufe.getRankingSpan);
 	zhiwang.start();
+}else if (location.href.startsWith("https://academic.microsoft.com/search?")){
+	microsoft.rankingSpanProvider.push(swufe.getRankingSpanEn);
+	microsoft.start();
 }

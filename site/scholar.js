@@ -99,36 +99,6 @@ function fetchRank(node, title, author, year, journal, q_key) {
 					url.indexOf("/rec/") + 5,
 					url.lastIndexOf("/")
 				);
-			} else {
-				for (let hit of resp.hit) {
-					info = hit.info
-					if (info.authors.author[0] == undefined) {
-						continue;
-					}
-					author_1st = info.authors.author[0].text;
-					year_fuzzy = info.year;
-					year_last_check = 0;
-					if (Math.abs(Number(year) - year_fuzzy) <= 1 &&
-						author_1st.toLowerCase().split(" ").indexOf(author.toLowerCase()) != -1 &&
-						year_fuzzy != year_last_check) {
-						year_last_check = year_fuzzy;
-						url = resp.hit[h].info.url;
-						dblp_url_last_check = url.substring(
-							url.indexOf("/rec/") + 5,
-							url.lastIndexOf("/")
-						);
-						if (year_fuzzy == year + 1) {
-							dblp_url = dblp_url_last_check;
-						} else if (year_fuzzy == year) {
-							dblp_url = dblp_url_last_check;
-							break;
-						} else {
-							if (dblp_url == "") {
-								dblp_url = dblp_url_last_check;
-							};
-						}
-					}
-				}
 			}
 			const names = [{
 				uri: dblp_url
