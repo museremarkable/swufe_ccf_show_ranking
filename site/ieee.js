@@ -1,6 +1,7 @@
 const ieee = {};
 
 ieee.rankingSpanProvider = [];
+ieee.rankSpanListSwufe = [];
 ieee.loadMoreInited = false;
 ieee.desktopLastIndex = -1;
 ieee.mobileLastIndex = -1;
@@ -55,6 +56,9 @@ ieee.addRanking = function(result) {
         for(let getRankingSpan of ieee.rankingSpanProvider){
             result.before(getRankingSpan(names));
         }
+		for(let getRankingSpan of ieee.rankSpanListSwufe){
+		    result.before(getRankingSpan(names[0]["full"].toUpperCase()));
+		}
     }
 }
 

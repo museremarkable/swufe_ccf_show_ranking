@@ -1,5 +1,6 @@
 if(location.href.startsWith("https://ieeexplore.ieee.org/search/searchresult.jsp?")){
     ieee.rankingSpanProvider.push(ccf.getRankingSpan);
+	ieee.rankSpanListSwufe.push(swufe.getRankingSpanEn);
     ieee.start();
 } else if(location.href.startsWith("https://dl.acm.org/action/doSearch?")){
     acm.rankingSpanProvider.push(ccf.getRankingSpan);
