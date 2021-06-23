@@ -4,7 +4,7 @@
       "description": "The title of the application, displayed in the web store."
     },
     "appDesc": {
-      "message": "支持在谷歌学术、微软学术、知网上显示SWUFE等级, 在谷歌学术、Springer、 DBLP、IEEExplore和ACMDL上显示CCF等级",
+      "message": "支持在谷歌学术、微软学术、知网、Springer、IEEExplore上显示SWUFE等级,。在谷歌学术、Springer、 DBLP、IEEExplore和ACMDL上显示CCF等级。",
       "description":"The description of the application, displayed in the web store."
     }
   }
