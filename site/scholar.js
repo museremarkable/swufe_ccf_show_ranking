@@ -35,12 +35,14 @@ scholar.run = function() {
 	if (url == "/scholar") {
 		scholar.appendRank();
 	} else if (url == "/citations") {
-		setInterval(function() {
-			$(window).bind("popstate", function() {
-				scholar.appendRanks();
-			});
-			scholar.appendRanks();
-		}, 2000);
+		scholar.appendRanks();
+		document.getElementById("gsc_bpf_more").addEventListener("click", function (){scholar.appendRanks();}, false);
+		// setInterval(function() {
+		// 	$(window).bind("popstate", function() {
+		// 		scholar.appendRanks();
+		// 	});
+		// 	scholar.appendRanks();
+		// }, 20000);
 	}
 };
 
@@ -78,7 +80,9 @@ scholar.appendRanks = function() {
 				.replace(/[\,\…]/g, "")
 				.split(" ")[1];
 			let year = $(this).find("td.gsc_a_y").text();
-			fetchRank(node, title, author, year);
+			let journal = $(this).find("div.gs_gray")[1].textContent.match(/.*?(?= [0-9])/);
+			let q_key = node.attr("data-href");
+			fetchRank(node, title, author, year, journal, q_key);
 		}
 	});
 };
@@ -112,32 +116,57 @@ function fetchRank(node, title, author, year, journal, q_key) {
 
 	if (journal != null) {
 		journal_str = journal[0];
+		if (journal_str.match(/.*?(?=,)/)){
+			journal_str = journal_str.match(/.*?(?=,)/)[0];
+		}
 		if (journal_str.match("…") === null) {
 			for (let getRankSpan of scholar.rankSpanListSwufe) {
 				$(node).after(getRankSpan(journal_str.toUpperCase()));
 			}
 		} else {
 			if (q_key) {
-				let code = q_key[0];
-				cite_api_format = document.location.hostname + "?q=info:" + code +
-					":scholar.google.com/&output=cite&scirp=0&hl=zh-CN";
-				var cite_xhr = new XMLHttpRequest();
-				cite_xhr.open("GET", cite_api_format, true);
-				cite_xhr.onreadystatechange = function() {
-					if (cite_xhr.readyState == 4) {
-						var resp = cite_xhr.responseText;
-						if (resp) {
-							var journal = resp.match(/(?<=]. ).*?(?=, [0-9]{4})/);
-							if (journal) {
-								journal_str = journal[0];
-								for (let getRankSpan of scholar.rankSpanListSwufe) {
-									$(node).after(getRankSpan(journal_str.toUpperCase()));
+				if(q_key.toString().match(/citation/)){
+					cite_api_format = q_key;
+					var cite_xhr = new XMLHttpRequest();
+					cite_xhr.open("GET", cite_api_format, true);
+					cite_xhr.onreadystatechange = function () {
+						if (cite_xhr.readyState == 4) {
+							var resp = cite_xhr.responseText;
+							if (resp) {
+								var journal = resp.match(/(?<=<div class="gsc_vcd_value">).*?(?=<\/div>)/g)
+								if (journal) {
+									journal_str = journal[2];
+									for (let getRankSpan of scholar.rankSpanListSwufe) {
+										$(node).after(getRankSpan(journal_str.toUpperCase()));
+									}
 								}
 							}
 						}
 					}
+					cite_xhr.send();
 				}
-				cite_xhr.send();
+				else {
+					let code = q_key[0];
+					cite_api_format = document.location.hostname + "?q=info:" + code +
+						":scholar.google.com/&output=cite&scirp=0&hl=zh-CN";
+					var cite_xhr = new XMLHttpRequest();
+					cite_xhr.open("GET", cite_api_format, true);
+					cite_xhr.onreadystatechange = function () {
+						if (cite_xhr.readyState == 4) {
+							var resp = cite_xhr.responseText;
+							if (resp) {
+								var journal = resp.match(/(?<=]. ).*?(?=, [0-9]{4})/);
+								if (journal) {
+									journal_str = journal[0];
+									for (let getRankSpan of scholar.rankSpanListSwufe) {
+										$(node).after(getRankSpan(journal_str.toUpperCase()));
+									}
+								}
+							}
+						}
+					}
+					cite_xhr.send();
+				}
 			}
 		}
 	};
