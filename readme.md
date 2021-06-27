@@ -5,20 +5,27 @@
 
 > swufe-ccf_show_ranking是踩在了巨人的肩膀上，我们利用了Github上开源的某CCF插件：show-rank 二次制作而成，在此非常感谢作者的无私奉献。如果您需要该版本，请转到以下位置进行浏览和下载：[show-rank主页](https://github.com/hnshhslsh/show-rank)
 
-**swufe-ccf_show_ranking** 是一个Google Chrome扩展，用于在论文搜索结果页面显示会议/期刊等级。
+**swufe-ccf_show_ranking** 是一个[Google Chrome扩展](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，用于在论文搜索结果页面显示会议/期刊等级。
 
 - 支持在[知网](https://www.cnki.net/)（中文）、[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、[微软学术](https://academic.microsoft.com)、[Springer](https://link.springer.com/)、[IEEExplore](https://ieeexplore.ieee.org/) 上显示[SWUFE](https://www.swufe.edu.cn/)（西南财经大学）等级
 
-- 支持在[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、 [Springer](https://link.springer.com/)、 [DBLP](https://dblp.uni-trier.de/)、 [IEEExplore](https://ieeexplore.ieee.org/) 和 [ACM Digital Library](https://dl.acm.org/) 上显示 CCF （中国计算机协会）等级
+- 支持在[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、 [Springer](https://link.springer.com/)、 [DBLP](https://dblp.uni-trier.de/)、 [IEEExplore](https://ieeexplore.ieee.org/) 和 [ACM Digital Library](https://dl.acm.org/) 上显示 CCF （中国计算机学会）等级
+
+|       |     知网     | 微软学术 | 谷歌学术 | Springer | IEEExplore | ACM  |
+| :---: | :----------: | :------: | :------: | :------: | :--------: | :--: |
+| SWUFE | 支持（中文） |   支持   |   支持   |   支持   |    支持    |      |
+|  CCF  |              |          |   支持   |   支持   |    支持    | 支持 |
 
 ### 安装
 
-1. 从[GitHub](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)**下载**源代码。
-2. **解压至某个文件夹内**，注意路径要全部为英文。
-3. 打开谷歌浏览器（Edge也可以），依次点击**右上方三个小点点，更多工具，扩展程序**。
-4. 打开右上方**开发者模式**。
-5. 点击左上角**加载已解压的扩展程序**。
-6. 选择**步骤2的文件夹**。
+1. 谷歌应用商店下载**（推荐）**：点击该链接[SWUFE、CFF：显示会议/期刊等级](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
+2. 离线安装方法（此为谷歌浏览器教程，其他浏览器步骤基本相似）：
+   - 从[GitHub](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)**下载**源代码
+   - 解压至**某个文件夹**中。（可删除picture文件夹，两个pdf文件，readme.md）
+   - 打开谷歌浏览器，依次点击**右上方三个小点点，更多工具，扩展程序**。
+   - 打开右上方**开发者模式**。
+   - 点击左上角**加载已解压的扩展程序**。
+   - 选择**步骤2的文件夹**。
 
 ### 项目展示
 
@@ -70,10 +77,12 @@
 
 ### 注意事项
 
+- **此插件不会收集用户任何信息**
+- **插件加载成功后，浏览指定网站时会自动运行，无需手动操作**
 - **本插件提供的等级排名仅供参考，具体的排名信息，请以标准文件为准。**
 - **若无法使用，请更新谷歌、Edge浏览器至最新版本**
 
 ### 数据来源
 
-- CCF:  [magichan](https://github.com/magichan/CCF-Recommended-Catalog-2019) for CCF Rank data / 提供CCF排名数据
-- SWUFE :《西南财经大学学术期刊目录2018》
+- CCF:  [magichan](https://github.com/magichan/CCF-Recommended-Catalog-2019) for CCF Rank data / 提供CCF排名数据，大约620种
+- SWUFE :《西南财经大学学术期刊目录2018》，中文约600种，英文约1700种（已经去重）
