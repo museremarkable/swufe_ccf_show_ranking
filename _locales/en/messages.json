@@ -4,7 +4,7 @@
       "description": "The title of the application, displayed in the web store."
     },
     "appDesc": {
-      "message": "Supports displaying SWUFE rating on Google Academic, Microsoft Academic, CNY, and CCF rating on Google Academic, Springer, DBLP, IEEEExplore and ACMDL .",
+      "message": "Supports displaying SWUFE rating on Google Academic, Microsoft Academic, CNY, and CCF rating on Springer, DBLP, IEEEExplore .",
       "description":"The description of the application, displayed in the web store."
     }
   }
