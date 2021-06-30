@@ -1,7 +1,7 @@
 {
 	"name": "__MSG_appName__",
 	"manifest_version": 2,
-	"version": "2.2",
+	"version": "2.3",
 	"description": "__MSG_appDesc__",
 	"default_locale": "en",
 	"icons": {
@@ -19,6 +19,8 @@
     "content_scripts": [
         {
             "matches": [
+				"https://apps.webofknowledge.com/*",
+				"http://apps.webofknowledge.com/*",
 				"https://academic.microsoft.com/*",
 				"https://webvpn.swufe.edu.cn/https/77726476706e69737468656265737421fbf952d2243e635930068cb8/*",
 				"https://kns.cnki.net/kns8/defaultresult/*",
@@ -122,6 +124,7 @@
                 "site/scholar.js",
                 "site/zhiwang.js",
 				"site/microsoft.js",
+				"site/webofscience.js",
                 "data/ccf-index.js",
                 "data/ccf-rank.js",
 				"data/swufeRankingName.js",
