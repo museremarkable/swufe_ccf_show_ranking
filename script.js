@@ -32,4 +32,8 @@ if (location.href.startsWith("https://ieeexplore.ieee.org/search/searchresult.js
 } else if (location.href.startsWith("https://apps.webofknowledge.com") || location.href.startsWith("http://apps.webofknowledge.com")) {
 	webofscience.rankSpanListSwufe.push(swufe.getRankingSpanEn);
 	webofscience.start();
+}else if (location.href.startsWith("http://xueshu.baidu.com/") || location.href.startsWith("https://xueshu.baidu.com/")) {
+	baiduxueshu.rankSpanListSwufe.push(swufe.getRankingSpanEn);
+	baiduxueshu.rankSpanListSwufe.push(swufe.getRankingSpan);
+	baiduxueshu.start();
 }

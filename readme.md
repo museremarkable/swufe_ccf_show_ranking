@@ -7,19 +7,20 @@
 
 **swufe-ccf_show_ranking** 是一个[Google Chrome扩展](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，用于在论文搜索结果页面显示会议/期刊等级。
 
-- 支持在[知网](https://www.cnki.net/)（中文）、[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、[微软学术](https://academic.microsoft.com)、[Springer](https://link.springer.com/)、[IEEExplore](https://ieeexplore.ieee.org/) 、[web of science](http://apps.webofknowledge.com/)上显示[SWUFE](https://www.swufe.edu.cn/)（西南财经大学）等级
+- 支持在[知网](https://www.cnki.net/)（中文）、[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、[微软学术](https://academic.microsoft.com)、[Springer](https://link.springer.com/)、[IEEExplore](https://ieeexplore.ieee.org/) 、[web of science](http://apps.webofknowledge.com/)、[百度学术](https://xueshu.baidu.com/)上显示[SWUFE](https://www.swufe.edu.cn/)（西南财经大学）等级
 
 - 支持在[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、 [Springer](https://link.springer.com/)、 [DBLP](https://dblp.uni-trier.de/)、 [IEEExplore](https://ieeexplore.ieee.org/) 和 [ACM Digital Library](https://dl.acm.org/) 上显示 CCF （中国计算机学会）等级
 
-|       |     知网     | 微软学术 | 谷歌学术 | Springer | IEEExplore | ACM  | web of science |
-| :---: | :----------: | :------: | :------: | :------: | :--------: | :--: | :------------: |
-| SWUFE | 支持（中文） |   支持   |   支持   |   支持   |    支持    |      |      支持      |
-|  CCF  |              |          |   支持   |   支持   |    支持    | 支持 |                |
+|       |     知网     | 微软学术 | 谷歌学术 | Springer | IEEExplore | ACM  | web of science |    百度学术    |
+| :---: | :----------: | :------: | :------: | :------: | :--------: | :--: | :------------: | :------------: |
+| SWUFE | 支持（中文） |   支持   |   支持   |   支持   |    支持    |      |      支持      | 支持（中、英） |
+|  CCF  |              |          |   支持   |   支持   |    支持    | 支持 |                |                |
 
 ### 安装
 
-1. 谷歌应用商店下载**（推荐）**：点击该链接[SWUFE、CFF：显示会议/期刊等级](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
-2. 离线安装方法（此为谷歌浏览器教程，其他浏览器步骤基本相似）：
+1. 谷歌应用商店下载 **（推荐）**：点击[SWUFE、CFF：显示会议/期刊等级](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
+2. 火狐应用商店下载：点击[SWUFE、CFF：显示会议/期刊等级](https://addons.mozilla.org/zh-CN/firefox/addon/swufe_ccf_show_rank/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)，点击安装即可。
+3. 离线安装方法（此为谷歌浏览器教程，其他浏览器步骤基本相似）：
    - 从[GitHub](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)**下载**源代码
    - 解压至**某个文件夹**中。（可删除picture文件夹，两个pdf文件，readme.md）
    - 打开谷歌浏览器，依次点击**右上方三个小点点，更多工具，扩展程序**。
@@ -69,6 +70,10 @@
   ![](picture/9.png)
 
   ![](picture/10.png)
+
+- **在[百度学术](https://xueshu.baidu.com/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。**
+
+  ![](picture/11.png)![](picture/12.png)
 
 - **在  [DBLP](https://dblp.uni-trier.de/), [IEEExplore](https://ieeexplore.ieee.org/) 会自动地在来源前加上会议/期刊的 CCF 等级，并以不同颜色标识。**
 
