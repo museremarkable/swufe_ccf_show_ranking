@@ -1,7 +1,7 @@
 {
 	"name": "__MSG_appName__",
 	"manifest_version": 2,
-	"version": "2.4",
+	"version": "2.5",
 	"description": "__MSG_appDesc__",
 	"default_locale": "en",
 	"icons": {
@@ -20,6 +20,8 @@
         {
             "matches": [
 				"https://xueshu.baidu.com/*",
+				"https://www.webofscience.com/*",
+				"http://www.webofscience.com/*",
 				"https://apps.webofknowledge.com/*",
 				"http://apps.webofknowledge.com/*",
 				"https://academic.microsoft.com/*",
@@ -126,6 +128,7 @@
                 "site/zhiwang.js",
 				"site/microsoft.js",
 				"site/webofscience.js",
+				"site/newwebofscience.js",
 				"site/baiduxueshu.js",
                 "data/ccf-index.js",
                 "data/ccf-rank.js",

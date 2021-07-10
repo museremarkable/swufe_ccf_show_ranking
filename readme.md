@@ -7,7 +7,7 @@
 
 **swufe-ccf_show_ranking** 是一个[Google Chrome扩展](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，用于在论文搜索结果页面显示会议/期刊等级。
 
-- 支持在[知网](https://www.cnki.net/)（中文）、[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、[微软学术](https://academic.microsoft.com)、[Springer](https://link.springer.com/)、[IEEExplore](https://ieeexplore.ieee.org/) 、[web of science](http://apps.webofknowledge.com/)、[百度学术](https://xueshu.baidu.com/)上显示[SWUFE](https://www.swufe.edu.cn/)（西南财经大学）等级
+- 支持在[知网](https://www.cnki.net/)（中文）、[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、[微软学术](https://academic.microsoft.com)、[Springer](https://link.springer.com/)、[IEEExplore](https://ieeexplore.ieee.org/) 、[web of science(新、旧版)](http://apps.webofknowledge.com/)、[百度学术](https://xueshu.baidu.com/)上显示[SWUFE](https://www.swufe.edu.cn/)（西南财经大学）等级
 
 - 支持在[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、 [Springer](https://link.springer.com/)、 [DBLP](https://dblp.uni-trier.de/)、 [IEEExplore](https://ieeexplore.ieee.org/) 和 [ACM Digital Library](https://dl.acm.org/) 上显示 CCF （中国计算机学会）等级
 
@@ -65,11 +65,15 @@
 
   ![](picture/7.png)
 
-- **在[web of science](https://ieeexplore.ieee.org/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。**
+- **在[web of science旧版](http://apps.webofknowledge.com/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。**
 
   ![](picture/9.png)
 
   ![](picture/10.png)
+
+- **在[web of science新版](https://www.webofscience.com/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。**
+
+  ![](picture/13.png)![](picture/14.png)
 
 - **在[百度学术](https://xueshu.baidu.com/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。**
 
@@ -78,6 +82,12 @@
 - **在  [DBLP](https://dblp.uni-trier.de/), [IEEExplore](https://ieeexplore.ieee.org/) 会自动地在来源前加上会议/期刊的 CCF 等级，并以不同颜色标识。**
 
   在此不做演示，请前往[show-rank](https://github.com/hnshhslsh/show-rank)仓库查看
+
+### 什么人需要这个插件？
+
+- 若您是**西南财经大学**的学生，恭喜您，您非常适合这款插件。
+- 若您是**其他财经高校**的学生，西财作为四大财经高校之一，它的排名有一定的参考价值，推荐您安装。
+- 若您是**理工类高校**的学生，西财作为211高校，且《西南财经大学学术期刊目录2018》不仅是财经排名，还包括其他专业的期刊数据，推荐您安装体验，满意后自定义自己学校的数据。
 
 ### 想要自定义自己学校的数据？
 
