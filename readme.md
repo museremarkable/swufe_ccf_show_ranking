@@ -3,7 +3,7 @@
 
 ### 简介
 
-> swufe-ccf_show_ranking是踩在了巨人的肩膀上，我们利用了Github上开源的某CCF插件：show-rank 二次制作而成，在此非常感谢作者的无私奉献。如果您需要该版本，请转到以下位置进行浏览和下载：[show-rank主页](https://github.com/hnshhslsh/show-rank)
+> swufe-ccf_show_ranking是踩在了巨人的肩膀上，我们利用了Github上开源的CCF插件二次制作而成，在此非常感谢作者的无私奉献。如果您需要该版本，请转到以下位置进行浏览和下载：[show-rank](https://github.com/hnshhslsh/show-rank), [CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)
 
 **swufe-ccf_show_ranking** 是一个[Google Chrome扩展](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，用于在论文搜索结果页面显示会议/期刊等级。
 
@@ -71,7 +71,7 @@
 
   ![](picture/10.png)
 
-- **在[web of science新版](https://www.webofscience.com/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。**
+- **在[web of science新版](https://www.webofscience.com/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。（您可以点击右上角Products，点击web of science(Classic)切换回旧版）**
 
   ![](picture/13.png)![](picture/14.png)
 
@@ -107,3 +107,18 @@
 
 - CCF:  [magichan](https://github.com/magichan/CCF-Recommended-Catalog-2019) for CCF Rank data / 提供CCF排名数据，大约620种
 - SWUFE :《西南财经大学学术期刊目录2018》，中文约600种，英文约1700种（已经去重）
+
+### 更新日志
+
+|   时间    |                         内容                         |                            贡献者                            |
+| :-------: | :--------------------------------------------------: | :----------------------------------------------------------: |
+| 2021.6.6  |                  支持知网查询swufe                   |                          Nixiak-nan                          |
+| 2021.6.19 |                支持谷歌学术查询swufe                 | [museremarkable](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/commits?author=museremarkable) |
+| 2021.6.20 |                将CCF-none修改为不显示                | [museremarkable](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/commits?author=museremarkable) |
+| 2021.6.21 |        支持微软学术、IEEE、springer显示swufe         |                          Nixiak-nan                          |
+| 2021.6.23 |                  成功在谷歌商店上架                  |                          Nixiak-nan                          |
+| 2021.6.30 |          增加对web of science显示swufe等级           |                          Nixiak-nan                          |
+| 2021.6.30 |                  成功在火狐商店上架                  |                          Nixiak-nan                          |
+| 2021.7.1  |        增加对百度学术显示swufe等级（中、英）         |                          Nixiak-nan                          |
+| 2021.7.10 | 增加对**新版**web of science显示swufe等级（版本2.5） |                          Nixiak-nan                          |
+
