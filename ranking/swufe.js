@@ -42,6 +42,21 @@ swufe.getRankingInfoEn = function(name) {
 	return rankingInfo;
 }
 
+swufe.CCFgetRankingInfoEn = function(name) {
+	let rankingInfo = {};
+	rankingInfo.rankings = [];
+	rankingInfo.info = '';
+	let ranking = ccf.rankingFullName[name];
+		console.log(ranking);
+	if (ranking == null || ranking == "" || ranking == undefined) {
+		ranking = ""
+	}
+	rankingInfo.rankings.push(ranking);
+
+	return rankingInfo;
+}
+
+
 swufe.getRankingClass = function(rankings) {
 	for (let result of rankings) { // 
 		if (result == "swufe A") {
@@ -71,6 +86,18 @@ swufe.getRankingSpanEn = function(name) {
 	let rankingInfo = swufe.getRankingInfoEn(name);
 	let span = $('<span>').addClass(swufe.getRankingClass(rankingInfo.rankings)).text(
 		rankingInfo.rankings.join('/'));
+	if (swufe.getRankingClass(rankingInfo.rankings) != "swufe-none"){
+		span.addClass("ccf-ranking");
+	}
+	return span;
+}
+
+swufe.CCFgetRankingSpanEn= function(name) {
+	let rankingInfo = swufe.CCFgetRankingInfoEn(name);
+	if (rankingInfo.rankings != "") {
+		var span = $('<span>').addClass('ccf-ranking').addClass(ccf.getRankingClass(rankingInfo.rankings)).text(
+			'CCF ' + rankingInfo.rankings.join('/'));
+	}
 	if (swufe.getRankingClass(rankingInfo.rankings) != "swufe-none"){
 		span.addClass("ccf-ranking");
 	}

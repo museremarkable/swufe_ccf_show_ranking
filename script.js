@@ -17,10 +17,13 @@ if (location.href.startsWith("https://ieeexplore.ieee.org/search/searchresult.js
 	ei.rankingSpanProvider.push(ccf.getRankingSpan);
 	ei.start();
 } else if (location.hostname.startsWith("scholar.google")) {
+	
 	ccf.custom2rank = dblp.uri2rank;
 	scholar.rankSpanList.push(ccf.getRankingSpan);
 	scholar.rankSpanListSwufe.push(swufe.getRankingSpanEn);
+	scholar.rankSpanListSwufe.push(swufe.CCFgetRankingSpanEn);
 	scholar.run();
+	
 } else if (location.href.startsWith(
 		"https://webvpn.swufe.edu.cn/https/77726476706e69737468656265737421fbf952d2243e635930068cb8/kns8/defaultresult/index"
 	) || location.href.startsWith("https://kns.cnki.net/kns8/defaultresult")) {
