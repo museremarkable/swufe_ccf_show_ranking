@@ -14,7 +14,7 @@
 |       |     知网     | 微软学术 | 谷歌学术 | Springer | IEEExplore | ACM  | web of science |    百度学术    |
 | :---: | :----------: | :------: | :------: | :------: | :--------: | :--: | :------------: | :------------: |
 | SWUFE | 支持（中文） |   支持   |   支持   |   支持   |    支持    |      |      支持      | 支持（中、英） |
-|  CCF  |              |          |   支持   |   支持   |    支持    | 支持 |                |                |
+|  CCF  |              |   支持   |   支持   |   支持   |    支持    | 支持 |      支持      |      支持      |
 
 ### 安装
 
@@ -43,7 +43,7 @@
 
 
 
-- **在[微软学术](https://academic.microsoft.com)会自动地在来源前加上会议/期刊的SWUFE，并以不同颜色标识。**
+- **在[微软学术](https://academic.microsoft.com)会自动地在来源前加上会议/期刊的SWUFE、CCF，并以不同颜色标识。**
 
   ![](picture/8.png)
 
@@ -65,23 +65,23 @@
 
   ![](picture/7.png)
 
-- **在[web of science旧版](http://apps.webofknowledge.com/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。**
+- **在[web of science旧版](http://apps.webofknowledge.com/) 会自动地在来源前加上会议/期刊的SWUFE、CCF等级，并以不同颜色标识，支持以西财VPN访问的链接。**
 
   ![](picture/9.png)
 
   ![](picture/10.png)
 
-- **在[web of science新版](https://www.webofscience.com/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。（您可以点击右上角Products，点击web of science(Classic)切换回旧版）**
+- **在[web of science新版](https://www.webofscience.com/) 会自动地在来源前加上会议/期刊的SWUFE、CCF等级，并以不同颜色标识。（您可以点击右上角Products，点击web of science(Classic)切换回旧版），支持以西财VPN访问的链接。**
 
   ![](picture/13.png)![](picture/14.png)
 
-- **在[百度学术](https://xueshu.baidu.com/) 会自动地在来源前加上会议/期刊的SWUFE等级，并以不同颜色标识。**
+- **在[百度学术](https://xueshu.baidu.com/) 会自动地在来源前加上会议/期刊的SWUFE、CCF等级，并以不同颜色标识。**
 
   ![](picture/11.png)![](picture/12.png)
 
 - **在  [DBLP](https://dblp.uni-trier.de/), [IEEExplore](https://ieeexplore.ieee.org/) 会自动地在来源前加上会议/期刊的 CCF 等级，并以不同颜色标识。**
 
-  在此不做演示，请前往[show-rank](https://github.com/hnshhslsh/show-rank)仓库查看
+  在此不做演示，请前往[show-rank](https://github.com/hnshhslsh/show-rank)，[CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)仓库查看
 
 ### 什么人需要这个插件？
 
@@ -95,6 +95,7 @@
 - 修改data下的**swufeRankingName.js**中的数据
 - 利用编辑器功能，进行**所有文件全局替换**，将**swufe**替换为自己学校的名称缩写
 - 更换logo下的图片，请注意像素大小应该相同
+- **若需要帮助替换数据，可以在Issues留言**
 
 ### 注意事项
 
@@ -110,15 +111,17 @@
 
 ### 更新日志
 
-|   时间    |                         内容                         |                            贡献者                            |
-| :-------: | :--------------------------------------------------: | :----------------------------------------------------------: |
-| 2021.6.6  |                  支持知网查询swufe                   |                          Nixiak-nan                          |
-| 2021.6.19 |                支持谷歌学术查询swufe                 | [museremarkable](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/commits?author=museremarkable) |
-| 2021.6.20 |                将CCF-none修改为不显示                | [museremarkable](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/commits?author=museremarkable) |
-| 2021.6.21 |        支持微软学术、IEEE、springer显示swufe         |                          Nixiak-nan                          |
-| 2021.6.23 |                  成功在谷歌商店上架                  |                          Nixiak-nan                          |
-| 2021.6.30 |          增加对web of science显示swufe等级           |                          Nixiak-nan                          |
-| 2021.6.30 |                  成功在火狐商店上架                  |                          Nixiak-nan                          |
-| 2021.7.1  |        增加对百度学术显示swufe等级（中、英）         |                          Nixiak-nan                          |
-| 2021.7.10 | 增加对**新版**web of science显示swufe等级（版本2.5） |                          Nixiak-nan                          |
+|   时间    |                          内容                           |                            贡献者                            |
+| :-------: | :-----------------------------------------------------: | :----------------------------------------------------------: |
+| 2021.6.6  |                    支持知网查询swufe                    |                          Nixiak-nan                          |
+| 2021.6.19 |                  支持谷歌学术查询swufe                  | [museremarkable](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/commits?author=museremarkable) |
+| 2021.6.20 |                 将CCF-none修改为不显示                  | [museremarkable](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/commits?author=museremarkable) |
+| 2021.6.21 |          支持微软学术、IEEE、springer显示swufe          |                          Nixiak-nan                          |
+| 2021.6.23 |                   成功在谷歌商店上架                    |                          Nixiak-nan                          |
+| 2021.6.30 |            增加对web of science显示swufe等级            |                          Nixiak-nan                          |
+| 2021.6.30 |                   成功在火狐商店上架                    |                          Nixiak-nan                          |
+| 2021.7.1  |          增加对百度学术显示swufe等级（中、英）          |                          Nixiak-nan                          |
+| 2021.7.10 |    增加对**新版**web of science显示swufe等级（V2.5）    |                          Nixiak-nan                          |
+| 2021.8.2  |               修改了谷歌学术显示CCF的方式               |                          Nixiak-nan                          |
+| 2021.8.3  | 增加了百度学术、web of science、微软学术显示CCF（V2.6） |                          Nixiak-nan                          |
 

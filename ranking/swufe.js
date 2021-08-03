@@ -47,12 +47,16 @@ swufe.CCFgetRankingInfoEn = function(name) {
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
 	let ranking = ccf.rankingFullName[name];
-		console.log(ranking);
-	if (ranking == null || ranking == "" || ranking == undefined) {
-		ranking = ""
-	}
+	
+	if (ranking == null) {
+		ranking = "";
+		name = "IEEE " + name; 
+		var new_ranking = ccf.rankingFullName[name];
+		if (new_ranking){
+			ranking = new_ranking;
+		}
+	} 
 	rankingInfo.rankings.push(ranking);
-
 	return rankingInfo;
 }
 

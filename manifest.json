@@ -19,6 +19,10 @@
     "content_scripts": [
         {
             "matches": [
+				"https://webvpn.swufe.edu.cn/http/77726476706e69737468656265737421f1e7518f69276d52710e82a297422f30a0c6fa320a29ae/*",
+				"https://webvpn.swufe.edu.cn/https/77726476706e69737468656265737421f1e7518f69276d52710e82a297422f30a0c6fa320a29ae/*",
+				"https://webvpn.swufe.edu.cn/http/77726476706e69737468656265737421e7e056d230356a5f781b8aa59d5b20301c1db852/wos/alldb/*",
+				"https://webvpn.swufe.edu.cn/https/77726476706e69737468656265737421e7e056d230356a5f781b8aa59d5b20301c1db852/wos/alldb/*",
 				"https://xueshu.baidu.com/*",
 				"https://www.webofscience.com/*",
 				"http://www.webofscience.com/*",
