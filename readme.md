@@ -9,12 +9,12 @@
 
 - 支持在[知网](https://www.cnki.net/)（中文）、[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、[微软学术](https://academic.microsoft.com)、[Springer](https://link.springer.com/)、[IEEExplore](https://ieeexplore.ieee.org/) 、[web of science(新、旧版)](http://apps.webofknowledge.com/)、[百度学术](https://xueshu.baidu.com/)上显示[SWUFE](https://www.swufe.edu.cn/)（西南财经大学）等级
 
-- 支持在[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、 [Springer](https://link.springer.com/)、 [DBLP](https://dblp.uni-trier.de/)、 [IEEExplore](https://ieeexplore.ieee.org/) 和 [ACM Digital Library](https://dl.acm.org/) 上显示 CCF （中国计算机学会）等级
+- 支持在[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、[微软学术](https://academic.microsoft.com)、 [Springer](https://link.springer.com/)、 [DBLP](https://dblp.uni-trier.de/)、 [IEEExplore](https://ieeexplore.ieee.org/) 、[web of science(新、旧版)](http://apps.webofknowledge.com/)、[百度学术](https://xueshu.baidu.com/)和 [ACM Digital Library](https://dl.acm.org/) 上显示 CCF （中国计算机学会）等级
 
-|       |  知网   | 微软学术 | 谷歌学术 | Springer | IEEExplore | ACM  | web of science | 百度学术 |
-| :---: | :-----: | :------: | :------: | :------: | :--------: | :--: | :------------: | :------: |
-| SWUFE | ✔(中文) |    ✔     |    ✔     |    ✔     |     ✔      |      |       ✔        |    ✔     |
-|  CCF  |         |    ✔     |    ✔     |    ✔     |     ✔      |  ✔   |       ✔        |    ✔     |
+|       | 知网 | 微软学术 | 谷歌学术 | Springer | IEEExplore | ACM  | DBLP | web of science | 百度学术 |
+| :---: | :--: | :------: | :------: | :------: | :--------: | :--: | :--: | :------------: | :------: |
+| SWUFE |  ✔   |    ✔     |    ✔     |    ✔     |     ✔      |      |      |       ✔        |    ✔     |
+|  CCF  |      |    ✔     |    ✔     |    ✔     |     ✔      |  ✔   |  ✔   |       ✔        |    ✔     |
 
 ### 安装
 

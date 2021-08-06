@@ -4,7 +4,7 @@
       "description": "The title of the application, displayed in the web store."
     },
     "appDesc": {
-      "message": "Supports SWUFE and CCF ratings on Google Scholar, Microsoft Scholar, CNKI.com, Springer, IEEExplore, Web of Science, Baidu Academic. Display CCF levels on ACM.",
+      "message": "Supports SWUFE and CCF ratings on Google Scholar, Microsoft Scholar, CNKI.com, Springer, IEEExplore, Web of Science, Baidu Academic.",
       "description":"The description of the application, displayed in the web store."
     }
   }
