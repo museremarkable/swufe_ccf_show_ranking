@@ -142,7 +142,7 @@
 | 2021.8.3  |   增加了百度学术、web of science、微软学术显示CCF（V2.6）    |                          Nixiak-nan                          |
 | 2021.8.4  | 成功在[Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)商店上架 |                          Nixiak-nan                          |
 | 2021.8.23 |            上线两个月来，全平台用户人数突破200人             |                          all users                           |
-| 2021.8.25 | 修复了SWUFE推荐期刊的名字中，存在 **&或and** 所导致的无法识别的BUG |                          Nixiak-nan                          |
+| 2021.8.25 | 修复了SWUFE推荐期刊的名字中，<br/>存在 **&、and或  - :** 所导致的无法识别的BUG |                          Nixiak-nan                          |
 | 2021.8.25 | 在谷歌学术中，将发起请求的时间，<br/>调整为1-2秒间的一个随机数，尽可能的躲过谷歌反爬机制（V2.7） |                          Nixiak-nan                          |
 
 

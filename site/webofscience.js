@@ -24,7 +24,6 @@ webofscience.addRankings = function () {
 	reference_results.each(function (index) {
 	    let reference_result = $(this);
 	    let reference_source = reference_result.find("div:eq(1) value:first");
-		console.log(reference_source)
 		let reference_name = reference_source.text().trim();
 		
 	    if (reference_name.length != 0) {

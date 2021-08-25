@@ -160,7 +160,6 @@ function fetchRank(node, title, author, year, journal, q_key) {
 			}
 		} else {
 			var sleep_time = Math.floor(Math.random() * (2000 - 1000 + 1) + 1000)
-			console.log(sleep_time)
 			sleep(sleep_time);
 			if (q_key) {
 				if(q_key.toString().match(/citation/)){
