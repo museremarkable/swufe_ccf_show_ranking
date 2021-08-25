@@ -64,6 +64,20 @@ scholar.run = function() {
 		// }, 20000);
 	}
 };
+/**
+ *  睡眠函数
+ *  @param numberMillis -- 要睡眠的毫秒数
+ */
+function sleep(numberMillis) {
+    var now = new Date();
+    var exitTime = now.getTime() + numberMillis;
+    while (true) {
+        now = new Date();
+        if (now.getTime() > exitTime)
+            return;
+    }
+}
+
 
 scholar.appendRank = function() {
 	let elements = $("#gs_res_ccl_mid > div > div.gs_ri");
@@ -145,6 +159,9 @@ function fetchRank(node, title, author, year, journal, q_key) {
 				$(node).after(getRankSpan(journal_str.toUpperCase()));
 			}
 		} else {
+			var sleep_time = Math.floor(Math.random() * (2000 - 1000 + 1) + 1000)
+			console.log(sleep_time)
+			sleep(sleep_time);
 			if (q_key) {
 				if(q_key.toString().match(/citation/)){
 					cite_api_format = q_key;
@@ -177,7 +194,6 @@ function fetchRank(node, title, author, year, journal, q_key) {
 							var resp = cite_xhr.responseText;
 							if (resp) {
 								var journal = resp.match(/(?<=]..).*?(?=,|\.)/);								
-								console.log(journal);
 								if (journal) {
 									journal_str = journal[0];
 									for (let getRankSpan of scholar.rankSpanListSwufe) {

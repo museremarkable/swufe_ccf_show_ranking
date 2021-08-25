@@ -31,6 +31,8 @@
 
 ### 项目展示
 
+<strong style="color:#ff0000;">若Github不能显示图片，请科学上网，或者前往[CSDN](https://blog.csdn.net/weixin_49328057/article/details/113148625?spm=1001.2014.3001.5502)查看</strong>
+
 - **在[知网](https://www.cnki.net/)上搜索论文时，会自动地在来源后加上会议/期刊的SWUFE等级，并以不同颜色标识，共分为A+,A,B,C四种。不仅支持原始知网链接，还支持使用[swufe-webvpn](https://webvpn.swufe.edu.cn/)登录知网的链接。**
 
 ![图片](picture/1.png)
@@ -82,6 +84,14 @@
 
   在此不做演示，请前往[show-rank](https://github.com/hnshhslsh/show-rank)，[CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)仓库查看，在此再次感谢作者的无私奉献。
 
+- **swufe数据展示：《西南财经大学学术期刊目录2018》，中文约600种，英文约1700种（已经去重）**
+
+  ![](picture/15.png)
+
+  ![](picture/16.png)
+
+  ![](picture/17.png)
+
 ### 什么人需要这个插件？
 
 - 若您是**西南财经大学**的学生，恭喜您，您非常适合这款插件。
@@ -121,9 +131,12 @@
 | 2021.6.30 | 成功在[火狐商店](https://addons.mozilla.org/zh-CN/firefox/addon/swufe_ccf_show_rank/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)上架 |                          Nixiak-nan                          |
 | 2021.7.1  |            增加对百度学术显示swufe等级（中、英）             |                          Nixiak-nan                          |
 | 2021.7.10 |      增加对**新版**web of science显示swufe等级（V2.5）       |                          Nixiak-nan                          |
-| 2021.8.2  |                 修改了谷歌学术显示CCF的方式                  |                          Nixiak-nan                          |
+| 2021.8.2  | 修改了谷歌学术显示CCF的方式，详情[点此查看](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/issues/7) |                          Nixiak-nan                          |
 | 2021.8.3  |   增加了百度学术、web of science、微软学术显示CCF（V2.6）    |                          Nixiak-nan                          |
 | 2021.8.4  | 成功在[Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)商店上架 |                          Nixiak-nan                          |
+| 2021.8.23 |            上线两个月来，全平台用户人数突破200人             |                          all users                           |
+| 2021.8.25 | 修复了SWUFE推荐期刊的名字中，存在**&或and**所导致的无法识别的BUG |                          Nixiak-nan                          |
+| 2021.8.25 | 在谷歌学术中，将发起请求的时间，<br/>调整为1-2秒间的一个随机数，尽可能的躲过谷歌反爬机制（V2.7） |                          Nixiak-nan                          |
 
 
 
