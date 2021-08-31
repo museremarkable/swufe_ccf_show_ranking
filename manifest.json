@@ -1,7 +1,7 @@
 {
 	"name": "__MSG_appName__",
 	"manifest_version": 2,
-	"version": "2.7",
+	"version": "3.0",
 	"description": "__MSG_appDesc__",
 	"default_locale": "en",
 	"icons": {
@@ -14,8 +14,10 @@
 			"16": "logo/16.png",
 			"24": "logo/24.png",
 			"32": "logo/32.png"
-		}
+		},
+		"default_popup":"popup.html"
 	},
+	"permissions": [ "storage" ],
     "content_scripts": [
         {
             "matches": [
@@ -120,8 +122,15 @@
             ],
             "js": [
                 "lib/jquery-3.3.1.min.js",
+				
                 "ranking/ccf.js",
 				"ranking/swufe.js",
+				"ranking/cufe.js",
+				"ranking/sci.js",
+				"ranking/sciif.js",
+				"ranking/fudan.js",
+				"ranking/sjtu.js",
+				
                 "site/siteUtil.js",
                 "site/acm.js",
                 "site/ei.js",
@@ -134,11 +143,17 @@
 				"site/webofscience.js",
 				"site/newwebofscience.js",
 				"site/baiduxueshu.js",
+				
                 "data/ccf-index.js",
                 "data/ccf-rank.js",
 				"data/swufeRankingName.js",
 				"data/ccfRankingAbbrName.js",
 				"data/ccfRankingFullName.js",
+				"data/cufeRankingName.js",
+				"data/sciImpactFactor.js",
+				"data/sciRankingName.js",
+				"data/fudanRankingName.js",
+				"data/sjtuRankingName.js",
                 "script.js"
             ],
             "css": [

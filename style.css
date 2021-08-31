@@ -24,6 +24,9 @@
 }
 
 
+.swufe-AA {
+    background-color: #ff55ff;
+}
 .swufe-A {
     background-color: #b94a48;
 }
@@ -34,10 +37,59 @@
     background-color: #468847;
 }
 
-.swufe-AA {
-    background-color: #ff55ff;
+
+.cufe-AAA {
+    background-color: #b94a48;
+}
+.cufe-AA {
+    background-color: #f89406;
+}
+.cufe-A {
+    background-color: #468847;
 }
 
+.fudan-A {
+    background-color: #b94a48;
+}
+.fudan-B {
+    background-color: #f89406;
+}
+
+.sjtu-A {
+    background-color: #b94a48;
+}
+.sjtu-B {
+    background-color: #f89406;
+}
+
+.sci-Q1 {
+    background-color: #ff55ff;
+}
+.sci-Q2 {
+    background-color: #b94a48;
+}
+.sci-Q3 {
+    background-color: #f89406;
+}
+.sci-Q4 {
+    background-color: #468847;
+}
+
+.sciif-10 {
+    background-color: #ff55ff;
+}
+.sciif-4 {
+    background-color: #b94a48;
+}
+.sciif-2 {
+    background-color: #f89406;
+}
+.sciif-1 {
+    background-color: #468847;
+}
+.sciif-0 {
+    background-color: #5555ff;
+}
 
 .ccf-verify {
     background-color: #3a87ad;

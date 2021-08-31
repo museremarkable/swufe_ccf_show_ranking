@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>测试</title>
+		<style>
+			.container {
+				width: 250px;
+				height: 300px;
+				background: #fff;
+				text-align: center;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h3>请选择需要显示的单位</h3>
+			<div class="items" id="check">
+				<label>西南财经大学：</label>
+				<input type="checkbox" id="swufe" value="swufe" checked="checked" /><br/>
+				<label>中央财经大学：</label>
+				<input type="checkbox" id="cufe" value="cufe" checked="checked" /><br/>
+				<label>复旦大学：</label>
+				<input type="checkbox" id="fudan" value="fudan" checked="checked" /><br/>
+				<label>上海交通大学：</label>
+				<input type="checkbox" id="sjtu" value="sjtu" checked="checked" /><br/>
+				<label>中国计算机学会：</label>
+				<input type="checkbox" id="ccf" value="ccf"  checked="checked" /><br/>
+				<label>sci影响因子：</label>
+				<input type="checkbox" id="sciif" value="sciif"  checked="checked" /><br/>
+				<label>sci分区：</label>
+				<input type="checkbox" id="sci" value="sci"  checked="checked" /><br/>
+			</div>
+			<div style="color: green" id="status"></div>
+			<button id="save" type="button" class="btn btn-success" style="width:20%">保存</button>
+		</div>
+		<script src="popup.js"></script>
+	</body>
+</html>

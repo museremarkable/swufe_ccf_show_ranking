@@ -1,25 +1,48 @@
-## 欢迎访问[swufe-ccf_show_ranking](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)源代码资源库！
-### Welcome to visit source of swufe-ccf_show_ranking!
+## 欢迎访问[Display paper conference/journal ranking](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)源代码资源库！
+### Welcome to visit source of Display paper conference/journal ranking!
 
 ### 简介
 
-> swufe-ccf_show_ranking是踩在了巨人的肩膀上，我们利用了Github上开源的CCF插件二次制作而成，在此非常感谢作者的无私奉献。如果您需要该版本，请转到以下位置进行浏览和下载：[show-rank](https://github.com/hnshhslsh/show-rank), [CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)
+> “显示论文会议/期刊等级” 是踩在了巨人的肩膀上，我们利用了Github上开源的CCF插件二次制作而成，在此非常感谢作者的无私奉献。如果您需要该版本，请转到以下位置进行浏览和下载：[show-rank](https://github.com/hnshhslsh/show-rank), [CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)
 
-**swufe-ccf_show_ranking** 是一个浏览器扩展，用于在论文搜索结果页面显示各大论文网站上的会议/期刊等级。
+**“显示论文会议/期刊等级”** 是一个浏览器扩展，它可以在各大论文网站上显示会议、期刊等级，具体的信息请您查看下方表格。
 
-- 支持在[知网](https://www.cnki.net/)（中文）、[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、[微软学术](https://academic.microsoft.com)、[Springer](https://link.springer.com/)、[IEEExplore](https://ieeexplore.ieee.org/) 、[web of science(新、旧版)](http://apps.webofknowledge.com/)、[百度学术](https://xueshu.baidu.com/)上显示[SWUFE](https://www.swufe.edu.cn/)（西南财经大学）等级
+> - 排名信息均在持续更新中，如果您有其他学校、单位的期刊排名，希望您可以发送给我，我将尽快更新（优先）。
+> - 各大网站均在持续支持中，如果您有其他需求，请在issues留言，我将尽快支持该网站。
 
-- 支持在[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)、[微软学术](https://academic.microsoft.com)、 [Springer](https://link.springer.com/)、 [DBLP](https://dblp.uni-trier.de/)、 [IEEExplore](https://ieeexplore.ieee.org/) 、[web of science(新、旧版)](http://apps.webofknowledge.com/)、[百度学术](https://xueshu.baidu.com/)和 [ACM Digital Library](https://dl.acm.org/) 上显示 CCF （中国计算机学会）等级
+#### 高校：
 
-|       | 知网 | 微软学术 | 谷歌学术 | Springer | IEEExplore | ACM  | DBLP | web of science | 百度学术 |
-| :---: | :--: | :------: | :------: | :------: | :--------: | :--: | :--: | :------------: | :------: |
-| SWUFE |  ✔   |    ✔     |    ✔     |    ✔     |     ✔      |      |      |       ✔        |    ✔     |
-|  CCF  |      |    ✔     |    ✔     |    ✔     |     ✔      |  ✔   |  ✔   |       ✔        |    ✔     |
+|                                                         | **西南财经大学** | 复旦大学  | 上海交通大学 | **中央财经大学** |
+| :-----------------------------------------------------: | :--------------: | :-------: | :----------: | :--------------: |
+|                                                         |    **swufe**     | **fudan** |   **sjtu**   |     **cufe**     |
+|            [**知网**](https://www.cnki.net/)            |      **✔**       |   **✔**   |    **✔**     |      **✔**       |
+|     [**微软学术**](https://academic.microsoft.com)      |      **✔**       |   **✔**   |    **✔**     |      **✔**       |
+| **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |      **✔**       |   **✔**   |    **✔**     |      **✔**       |
+|       [**Springer**](https://link.springer.com/)        |      **✔**       |           |              |      **✔**       |
+|     [**IEEExplore**](https://ieeexplore.ieee.org/)      |      **✔**       |           |              |      **✔**       |
+|             **[ACM](https://dl.acm.org/)**              |                  |           |              |                  |
+|         **[DBLP](https://dblp.uni-trier.de/)**          |                  |           |              |                  |
+|  **[web of science](http://apps.webofknowledge.com/)**  |      **✔**       |     ✔     |      ✔       |      **✔**       |
+|        **[百度学术](https://xueshu.baidu.com/)**        |      **✔**       |     ✔     |      ✔       |      **✔**       |
+
+#### 单位：
+
+|                                                         | **中科院分区** | **中科院影响因子** | **中国计算机学会** |
+| :-----------------------------------------------------: | :------------: | :----------------: | :----------------: |
+|                                                         |    **sci**     |     **SCIIF**      |      **ccf**       |
+|            [**知网**](https://www.cnki.net/)            |                |                    |                    |
+|     [**微软学术**](https://academic.microsoft.com)      |     **✔**      |       **✔**        |       **✔**        |
+| **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |     **✔**      |       **✔**        |       **✔**        |
+|       [**Springer**](https://link.springer.com/)        |     **✔**      |       **✔**        |       **✔**        |
+|     **[IEEExplore](https://ieeexplore.ieee.org/)**      |     **✔**      |       **✔**        |       **✔**        |
+|             **[ACM](https://dl.acm.org/)**              |                |                    |       **✔**        |
+|         **[DBLP](https://dblp.uni-trier.de/)**          |                |                    |       **✔**        |
+|  **[web of science](http://apps.webofknowledge.com/)**  |     **✔**      |       **✔**        |       **✔**        |
+|        **[百度学术](https://xueshu.baidu.com/)**        |     **✔**      |       **✔**        |       **✔**        |
 
 ### 安装
 
 1. 谷歌应用商店下载 **（推荐）**：点击[SWUFE、CFF：显示会议/期刊等级](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
-2. 火狐应用商店下载：点击[SWUFE、CFF：显示会议/期刊等级](https://addons.mozilla.org/zh-CN/firefox/addon/swufe_ccf_show_rank/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)，点击安装即可。
 3. Microsoft Edge应用商店下载：点击[SWUFE、CFF：显示会议/期刊等级](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)，点击安装即可。
 4. 离线安装方法（此为谷歌浏览器教程，其他浏览器步骤基本相似）：
    - 从[GitHub](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)**下载**源代码
@@ -29,92 +52,93 @@
    - 点击左上角**加载已解压的扩展程序**。
    - 选择**步骤2的文件夹**。
 
+### 使用说明
+
+1. **插件安装成功后，浏览指定网站时会自动运行，无需手动操作。**
+2. **点击浏览器右上角插件图标，即可进入插件设置页面。**
+3. **在此您可以根据自己的需求，选择需要展示的单位信息，保存后，重新刷新即可。**
+4. **此插件不会收集用户任何信息，请您放心使用。**
+
 ### 项目展示
 
 <strong style="color:#ff0000;">若Github不能显示图片，请科学上网，或者前往[CSDN](https://blog.csdn.net/weixin_49328057/article/details/113148625?spm=1001.2014.3001.5502)查看</strong>
 
-- **在[知网](https://www.cnki.net/)上搜索论文时，会自动地在来源后加上会议/期刊的SWUFE等级，并以不同颜色标识，共分为A+,A,B,C四种。不仅支持原始知网链接，还支持使用[swufe-webvpn](https://webvpn.swufe.edu.cn/)登录知网的链接。**
+- **点击浏览器右上角插件图标，即可进入插件设置页面，在此您可以根据自己的需求，选择需要展示的单位信息，保存后，重新刷新即可。**
+
+  <img src="picture/index.png" style="zoom:67%;" />
+
+- **[知网](https://www.cnki.net/)展示：该网站支持使用[swufe-webvpn](https://webvpn.swufe.edu.cn/)登录知网的链接。**
 
 ![图片](picture/1.png)
 
 ![图片](picture/2.png)
 
-- **在[谷歌学术](https://www.cnki.net/)上搜索英文论文时，会自动地在来源后加上会议/期刊的SWUFE、CCF等级，并以不同颜色标识，共分为A+,A,B,C四种.**
+![图片](picture/cnki1.png)
+
+- **[谷歌学术](https://www.cnki.net/)展示：**
 
   ![](picture/3.png)
+  
+  ![](picture/scholar1.png)<img src="picture/scholar2.png" style="zoom:80%;" />
 
 
 
 
-- **在[微软学术](https://academic.microsoft.com)会自动地在来源前加上会议/期刊的SWUFE、CCF，并以不同颜色标识。**
+- **[微软学术](https://academic.microsoft.com)展示：**
 
-  ![](picture/8.png)
+  <img src="picture/8.png" style="zoom: 67%;" />
 
-- **在 [Springer](https://link.springer.com/)会自动地在来源前加上会议/期刊的SWUFE、CCF等级，并以不同颜色标识。**
+  <img src="picture/microsoft1.png" style="zoom:80%;" />
 
-  ![](picture/5.png)
+- **[Springer](https://link.springer.com/)展示：**
+
+  <img src="picture/springer1.png" style="zoom:80%;" />
 
   
 
-  ![](picture/4.png)
+  
 
 
 
 - **在[IEEExplore](https://ieeexplore.ieee.org/) 会自动地在来源前加上会议/期刊的SWUFE、CCF等级，并以不同颜色标识。**
 
-  ![](picture/6.png)
+  <img src="picture/ieee1.png" style="zoom:67%;" />
 
-  ![](picture/7.png)
+  <img src="picture/ieee2.png" style="zoom: 67%;" />
 
-- **在[web of science旧版](http://apps.webofknowledge.com/) 会自动地在来源前加上会议/期刊的SWUFE、CCF等级，并以不同颜色标识，支持以西财VPN访问的链接。**
+- **[web of science旧版](http://apps.webofknowledge.com/) 展示：该网站支持以西财VPN访问的链接。**
 
-  ![](picture/9.png)
+  ![](picture/webofscience3.png)
 
-  ![](picture/10.png)
+  
 
-- **在[web of science新版](https://www.webofscience.com/) 会自动地在来源前加上会议/期刊的SWUFE、CCF等级，并以不同颜色标识。（您可以点击右上角Products，点击web of science(Classic)切换回旧版），支持以西财VPN访问的链接。**
+- **[web of science新版](https://www.webofscience.com/) 展示：（您可以点击右上角Products，点击web of science(Classic)切换回旧版），支持以西财VPN访问的链接。**
 
-  ![](picture/13.png)![](picture/14.png)
+  ![](picture/webofscience2.png)
 
-- **在[百度学术](https://xueshu.baidu.com/) 会自动地在来源前加上会议/期刊的SWUFE、CCF等级，并以不同颜色标识。**
+  ![](picture/webofscience1.png)
 
-  ![](picture/11.png)![](picture/12.png)
+  <img src="picture/13.png" style="zoom: 80%;" />
 
-- **在  [DBLP](https://dblp.uni-trier.de/), [IEEExplore](https://ieeexplore.ieee.org/) 会自动地在来源前加上会议/期刊的 CCF 等级，并以不同颜色标识。**
+- **[百度学术](https://xueshu.baidu.com/) 展示：**
 
-  在此不做演示，请前往[show-rank](https://github.com/hnshhslsh/show-rank)，[CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)仓库查看，在此再次感谢作者的无私奉献。
+  <img src="picture/baiduxueshu1.png" style="zoom:80%;" />
 
-- **swufe数据展示：《西南财经大学学术期刊目录2018》，中文约600种，英文约1700种（已经去重）**
+  <img src="picture/baiduxueshu2.png" style="zoom:80%;" />
 
-  ![](picture/15.png)
+  <img src="picture/baiduxueshu3.png" style="zoom: 80%;" />
 
-  ![](picture/16.png)
+- **在  [DBLP](https://dblp.uni-trier.de/), [ACM](https://dl.acm.org/)展示**：
 
-  ![](picture/17.png)
-
-### 什么人需要这个插件？
-
-- 若您是**西南财经大学**的学生，恭喜您，您非常适合这款插件。
-- 若您是**其他财经高校**的学生，西财作为四大财经高校之一，它的排名有一定的参考价值，推荐您安装。
-- 若您是**理工类高校**的学生，西财作为211高校，且《西南财经大学学术期刊目录2018》不仅是财经排名，还包括其他专业的期刊数据，推荐您安装体验，满意后自定义自己学校的数据。
-
-### 如何自定义自己学校的数据？
-
-- 点个**小星星 + fork**
-- 修改data下的**swufeRankingName.js**中的数据
-- 利用编辑器功能，进行**所有文件全局替换**，将**swufe**替换为自己学校的名称缩写
-- 更换logo下的图片，请注意像素大小应该相同
-- **若需要帮助替换数据，可以在issues留言**
+  在此不做演示，请前往[CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)仓库查看，在此再次感谢原作者的无私奉献。
 
 ### 注意事项
 
-- **此插件不会收集用户任何信息**
-
-- **插件加载成功后，浏览指定网站时会自动运行，无需手动操作**
-
 - **本插件提供的等级排名仅供参考，具体的排名信息，请以标准文件为准。**
 
-- **若无法使用，请更新谷歌、Edge浏览器、火狐至最新版本**
+- **部分期刊、会议无法识别的原因，请查看[部分CCF会议无法显示排名 #7](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/issues/7)**
+
+- **若无法使用，请更新谷歌、Edge浏览器至最新版本**
 
 - **若触发谷歌学术反爬机制，请您清空浏览器缓存，更换代理，关闭浏览器后重新打开谷歌学术**
 
@@ -124,6 +148,11 @@
 
 - CCF:  [magichan](https://github.com/magichan/CCF-Recommended-Catalog-2019) for CCF Rank data / 提供CCF排名数据，大约620种
 - SWUFE :《西南财经大学学术期刊目录2018》，中文约600种，英文约1700种（已经去重）
+- CUFE：《中央财经大学期刊目录（2019版）》，中文约200种，英文约470种（已经去重）
+- SCI：《2020年中科院期刊分区基础版（全）2020.12.9》，英文约9700种（已经去重）
+- SCIIF：《2020SCI影响因子数据库_2021.6.30》，英文约13000种（已经去重）
+- [fudan](http://www.gs.fudan.edu.cn/32/08/c2811a143880/page.htm)：《复旦大学学位与研究生教育国内期刊指导目录（2018年1月修订）》，只有中文，约1200种
+- [sjtu](https://me.sjtu.edu.cn/notice/12152.html)：《上海交通大学SCISCIE论文A档B档期刊分类目录及其他刊物等级参考(2018.5)》，只有中文，约1200种
 
 ### 更新日志
 
@@ -141,9 +170,9 @@
 | 2021.8.2  | 修改了谷歌学术显示CCF的方式，详情[点此查看](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/issues/7) |                          Nixiak-nan                          |
 | 2021.8.3  |   增加了百度学术、web of science、微软学术显示CCF（V2.6）    |                          Nixiak-nan                          |
 | 2021.8.4  | 成功在[Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)商店上架 |                          Nixiak-nan                          |
-| 2021.8.23 |            上线两个月来，全平台用户人数突破200人             |                          all users                           |
 | 2021.8.25 | 修复了SWUFE推荐期刊的名字中，<br/>存在 **&、and或  - :** 所导致的无法识别的BUG |                          Nixiak-nan                          |
 | 2021.8.25 | 在谷歌学术中，将发起请求的时间，<br/>调整为1-2秒间的一个随机数，尽可能的躲过谷歌反爬机制（V2.7） |                          Nixiak-nan                          |
+| 2021.8.31 | 新增加央财，复旦，上交大，SCI，SCIIF数据，<br/>并支持选择数据集（V3.0） |                          Nixiak-nan                          |
 
 
 

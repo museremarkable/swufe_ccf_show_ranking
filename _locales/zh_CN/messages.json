@@ -1,10 +1,10 @@
 {
     "appName": {
-      "message": "SWUFE、CFF：显示会议/期刊等级",
+      "message": "显示论文会议/期刊等级",
       "description": "The title of the application, displayed in the web store."
     },
     "appDesc": {
-      "message": "支持在谷歌学术、微软学术、知网、Springer、IEEExplore、web of science、百度学术上显示SWUFE、CCF等级,。在ACM上显示CCF等级。",
+      "message": "支持在各大论文搜索网站上，显示各种期刊排名。",
       "description":"The description of the application, displayed in the web store."
     }
   }
