@@ -17,20 +17,26 @@
 		<div class="container">
 			<h3>请选择需要显示的单位</h3>
 			<div class="items" id="check">
+				<label>全选：</label>
+				<input type="checkbox" id="check-all" checked="checked" /><br/>
 				<label>西南财经大学：</label>
-				<input type="checkbox" id="swufe" value="swufe" checked="checked" /><br/>
+				<input type="checkbox" name="input" id="swufe" value="swufe" checked="checked" /><br/>
 				<label>中央财经大学：</label>
-				<input type="checkbox" id="cufe" value="cufe" checked="checked" /><br/>
+				<input type="checkbox" name="input" id="cufe" value="cufe" checked="checked" /><br/>
 				<label>复旦大学：</label>
-				<input type="checkbox" id="fudan" value="fudan" checked="checked" /><br/>
+				<input type="checkbox" name="input" id="fudan" value="fudan" checked="checked" /><br/>
 				<label>上海交通大学：</label>
-				<input type="checkbox" id="sjtu" value="sjtu" checked="checked" /><br/>
+				<input type="checkbox" name="input" id="sjtu" value="sjtu" checked="checked" /><br/>
+				<label>厦门大学：</label>
+				<input type="checkbox" name="input" id="xmu" value="xmu" checked="checked" /><br/>
 				<label>中国计算机学会：</label>
-				<input type="checkbox" id="ccf" value="ccf"  checked="checked" /><br/>
+				<input type="checkbox" name="input" id="ccf" value="ccf"  checked="checked" /><br/>
 				<label>sci影响因子：</label>
-				<input type="checkbox" id="sciif" value="sciif"  checked="checked" /><br/>
+				<input type="checkbox" name="input" id="sciif" value="sciif"  checked="checked" /><br/>
 				<label>sci分区：</label>
-				<input type="checkbox" id="sci" value="sci"  checked="checked" /><br/>
+				<input type="checkbox" name="input" id="sci" value="sci"  checked="checked" /><br/>
+				<label>CSSCI南大核心：</label>
+				<input type="checkbox" name="input" id="cssci" value="cssci"  checked="checked" /><br/>
 			</div>
 			<div style="color: green" id="status"></div>
 			<button id="save" type="button" class="btn btn-success" style="width:20%">保存</button>

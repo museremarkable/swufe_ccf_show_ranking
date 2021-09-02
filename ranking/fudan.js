@@ -11,7 +11,7 @@ fudan.getRankingInfo = function(name) {
 		ranking = ""
 	}
 	else {
-		ranking = "fudan " + ranking;
+		ranking = "FUDAN " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -38,14 +38,14 @@ fudan.getRankingInfoEn = function(name) {
 			if (new_ranking == null){
 				new_ranking = fudan.rankingFullNameEn[name.match(pattern)[0].replace("AND","&")];
 				if(new_ranking){
-					ranking = "fudan " + new_ranking;
+					ranking = "FUDAN " + new_ranking;
 				}
 			}else{
-				ranking = "fudan " + new_ranking;
+				ranking = "FUDAN " + new_ranking;
 			}
 		}
 	} else {
-		ranking = "fudan " + ranking;
+		ranking = "FUDAN " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -58,9 +58,9 @@ fudan.getRankingInfoEn = function(name) {
 
 fudan.getRankingClass = function(rankings) {
 	for (let result of rankings) { // 
-		if (result == "fudan A") {
+		if (result == "FUDAN A") {
 			return 'fudan-A';
-		} else if (result == "fudan B") {
+		} else if (result == "FUDAN B") {
 			return 'fudan-B';
 		} 
 	}

@@ -13,13 +13,13 @@ function save_options() {
 		status.textContent = '选项已经保存';
 		setTimeout(function() {
 			status.textContent = '';
-		}, 750);
+		}, 1000);
 	});
 }
 
 function restore_options() {
 	chrome.storage.sync.get({
-		options: ['sci', 'swufe', 'ccf', 'cufe', 'sciif', 'fudan', 'sjtu']
+		options: ['sci', 'swufe', 'ccf', 'cufe', 'sciif', 'fudan', 'sjtu', 'cssci', 'xmu']
 	}, function(items) {
 		document.getElementById('swufe').checked = items.options.includes('swufe');
 		document.getElementById('ccf').checked = items.options.includes('ccf');
@@ -28,8 +28,21 @@ function restore_options() {
 		document.getElementById('sci').checked = items.options.includes('sci');
 		document.getElementById('fudan').checked = items.options.includes('fudan');
 		document.getElementById('sjtu').checked = items.options.includes('sjtu');
+		document.getElementById('cssci').checked = items.options.includes('cssci');
+		document.getElementById('xmu').checked = items.options.includes('xmu');
 	});
+}
+
+function checkAll(){
+	var check1 = document.getElementById("check-all");
+	var checked = check1.checked;
+	var checks = document.getElementsByTagName("input");
+	for(var i = 0; i < checks.length; i++){
+		var checkone = checks[i];
+		checkone.checked = checked;
+	}
 }
 
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click',save_options);
+document.getElementById('check-all').addEventListener('click',checkAll);

@@ -11,7 +11,7 @@ sci.getRankingInfo = function(name) {
 		ranking = ""
 	}
 	else {
-		ranking = "sci " + ranking;
+		ranking = "SCI " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -44,14 +44,14 @@ sci.getRankingInfoEn = function(name) {
 			if (new_ranking == null){
 				new_ranking = sci.rankingFullNameEn[name.match(pattern)[0].replace("AND","&")];
 				if(new_ranking){
-					ranking = "sci " + new_ranking;
+					ranking = "SCI " + new_ranking;
 				}
 			}else{
-				ranking = "sci " + new_ranking;
+				ranking = "SCI " + new_ranking;
 			}
 		}
 	} else {
-		ranking = "sci " + ranking;
+		ranking = "SCI " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -64,13 +64,13 @@ sci.getRankingInfoEn = function(name) {
 
 sci.getRankingClass = function(rankings) {
 	for (let result of rankings) { // 
-		if (result == "sci Q1") {
+		if (result == "SCI Q1") {
 			return 'sci-Q1';
-		} else if (result == "sci Q2") {
+		} else if (result == "SCI Q2") {
 			return 'sci-Q2';
-		} else if (result == "sci Q3") {
+		} else if (result == "SCI Q3") {
 			return 'sci-Q3';
-		} else if (result == "sci Q4") {
+		} else if (result == "SCI Q4") {
 			return 'sci-Q4';
 		} 
 	}

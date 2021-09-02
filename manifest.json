@@ -130,6 +130,8 @@
 				"ranking/sciif.js",
 				"ranking/fudan.js",
 				"ranking/sjtu.js",
+				"ranking/cssci.js",
+				"ranking/xmu.js",
 				
                 "site/siteUtil.js",
                 "site/acm.js",
@@ -154,6 +156,8 @@
 				"data/sciRankingName.js",
 				"data/fudanRankingName.js",
 				"data/sjtuRankingName.js",
+				"data/cssciRankingName.js",
+				"data/xmuRankingName.js",
                 "script.js"
             ],
             "css": [

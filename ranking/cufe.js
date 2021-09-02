@@ -11,7 +11,7 @@ cufe.getRankingInfo = function(name) {
 		ranking = ""
 	}
 	else {
-		ranking = "cufe " + ranking;
+		ranking = "CUFE " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -38,14 +38,14 @@ cufe.getRankingInfoEn = function(name) {
 			if (new_ranking == null){
 				new_ranking = cufe.rankingFullNameEn[name.match(pattern)[0].replace("AND","&")];
 				if(new_ranking){
-					ranking = "cufe " + new_ranking;
+					ranking = "CUFE " + new_ranking;
 				}
 			}else{
-				ranking = "cufe " + new_ranking;
+				ranking = "CUFE " + new_ranking;
 			}
 		}
 	} else {
-		ranking = "cufe " + ranking;
+		ranking = "CUFE " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -58,11 +58,11 @@ cufe.getRankingInfoEn = function(name) {
 
 cufe.getRankingClass = function(rankings) {
 	for (let result of rankings) { // 
-		if (result == "cufe AAA") {
+		if (result == "CUFE AAA") {
 			return 'cufe-AAA';
-		} else if (result == "cufe AA") {
+		} else if (result == "CUFE AA") {
 			return 'cufe-AA';
-		} else if (result == "cufe A") {
+		} else if (result == "CUFE A") {
 			return 'cufe-A';
 		} 
 	}

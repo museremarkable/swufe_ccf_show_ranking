@@ -11,7 +11,7 @@ swufe.getRankingInfo = function(name) {
 		ranking = ""
 	}
 	else {
-		ranking = "swufe " + ranking;
+		ranking = "SWUFE " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -35,14 +35,14 @@ swufe.getRankingInfoEn = function(name) {
 			if (new_ranking == null){
 				new_ranking = swufe.rankingFullNameEn[name.match(pattern)[0].replace("AND","&")];
 				if(new_ranking){
-					ranking = "swufe " + new_ranking;
+					ranking = "SWUFE " + new_ranking;
 				}
 			}else{
-				ranking = "swufe " + new_ranking;
+				ranking = "SWUFE " + new_ranking;
 			}
 		}
 	} else {
-		ranking = "swufe " + ranking;
+		ranking = "SWUFE " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -71,13 +71,13 @@ swufe.CCFgetRankingInfoEn = function(name) {
 
 swufe.getRankingClass = function(rankings) {
 	for (let result of rankings) { // 
-		if (result == "swufe A") {
+		if (result == "SWUFE A") {
 			return 'swufe-A';
-		} else if (result == "swufe A+") {
+		} else if (result == "SWUFE A+") {
 			return 'swufe-AA';
-		} else if (result == "swufe B") {
+		} else if (result == "SWUFE B") {
 			return 'swufe-B';
-		} else if (result == "swufe C") {
+		} else if (result == "SWUFE C") {
 			return 'swufe-C';
 		} 
 	}

@@ -11,7 +11,7 @@ sjtu.getRankingInfo = function(name) {
 		ranking = ""
 	}
 	else {
-		ranking = "sjtu " + ranking;
+		ranking = "SJTU " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -38,14 +38,14 @@ sjtu.getRankingInfoEn = function(name) {
 			if (new_ranking == null){
 				new_ranking = sjtu.rankingFullNameEn[name.match(pattern)[0].replace("AND","&")];
 				if(new_ranking){
-					ranking = "sjtu " + new_ranking;
+					ranking = "SJTU " + new_ranking;
 				}
 			}else{
-				ranking = "sjtu " + new_ranking;
+				ranking = "SJTU " + new_ranking;
 			}
 		}
 	} else {
-		ranking = "sjtu " + ranking;
+		ranking = "SJTU " + ranking;
 	}
 
 	rankingInfo.rankings.push(ranking);
@@ -58,9 +58,9 @@ sjtu.getRankingInfoEn = function(name) {
 
 sjtu.getRankingClass = function(rankings) {
 	for (let result of rankings) { // 
-		if (result == "sjtu A") {
+		if (result == "SJTU A") {
 			return 'sjtu-A';
-		} else if (result == "sjtu B") {
+		} else if (result == "SJTU B") {
 			return 'sjtu-B';
 		} 
 	}
