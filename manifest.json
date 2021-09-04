@@ -3,7 +3,7 @@
 	"manifest_version": 2,
 	"version": "3.1",
 	"description": "__MSG_appDesc__",
-	"default_locale": "en",
+	"default_locale": "zh-CN",
 	"icons": {
 		"16": "logo/16.png",
 		"48": "logo/64.png",
