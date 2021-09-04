@@ -1,4 +1,4 @@
-fudan.rankingFullName = {
+fdu.rankingFullName = {
 	"中国社会科学":"A",
 	"战略与管理":"A",
 	"中华文史论丛":"A",

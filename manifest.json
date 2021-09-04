@@ -1,7 +1,7 @@
 {
 	"name": "__MSG_appName__",
 	"manifest_version": 2,
-	"version": "3.0",
+	"version": "3.1",
 	"description": "__MSG_appDesc__",
 	"default_locale": "en",
 	"icons": {
@@ -128,10 +128,11 @@
 				"ranking/cufe.js",
 				"ranking/sci.js",
 				"ranking/sciif.js",
-				"ranking/fudan.js",
+				"ranking/fdu.js",
 				"ranking/sjtu.js",
 				"ranking/cssci.js",
 				"ranking/xmu.js",
+				"ranking/ruc.js",
 				
                 "site/siteUtil.js",
                 "site/acm.js",
@@ -154,10 +155,11 @@
 				"data/cufeRankingName.js",
 				"data/sciImpactFactor.js",
 				"data/sciRankingName.js",
-				"data/fudanRankingName.js",
+				"data/fduRankingName.js",
 				"data/sjtuRankingName.js",
 				"data/cssciRankingName.js",
 				"data/xmuRankingName.js",
+				"data/rucRankingName.js",
                 "script.js"
             ],
             "css": [
