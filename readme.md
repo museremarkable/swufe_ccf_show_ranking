@@ -146,11 +146,11 @@
 
 ### 数据来源
 
-- CCF:  [magichan](https://github.com/magichan/CCF-Recommended-Catalog-2019) for CCF Rank data / 提供CCF排名数据，大约620种
+- CCF:  《中国计算机学会推荐国际学术会议和期刊目录-2019》，大约620种
 - SWUFE :《西南财经大学学术期刊目录2018》，中文约600种，英文约1700种（已经去重）
 - CUFE：《中央财经大学期刊目录（2019版）》，中文约200种，英文约470种（已经去重）
-- SCI：《2020年中科院期刊分区基础版（全）2020.12.9》，英文约9700种（已经去重）
-- SCIIF：《2020SCI影响因子数据库_2021.6.30》，英文约13000种（已经去重）
+- [SCI：《2020年中科院期刊分区基础版（全）2020.12.9》](https://mp.weixin.qq.com/s/JLo5OpiyBxJLRjWvtoV0zg)，英文约9700种（已经去重）
+- [SCIIF：《2020SCI影响因子数据库_2021.6.30》](https://mp.weixin.qq.com/s/Le_MgN72odWYHByL7z-OOw)，英文约13000种（已经去重）
 - [FDU：《复旦大学学位与研究生教育国内期刊指导目录（2018年1月修订）》](http://www.gs.fudan.edu.cn/32/08/c2811a143880/page.htm)，只有中文，约1200种
 - [SJTU：《上海交通大学SCISCIE论文A档B档期刊分类目录及其他刊物等级参考(2018.5)》](https://me.sjtu.edu.cn/notice/12152.html)，只有中文，约1200种
 - XMU：《厦门大学人文社科核心学术期刊目录（2017）》，只有中文，约180种。
