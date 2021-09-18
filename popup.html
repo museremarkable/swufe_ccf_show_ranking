@@ -5,44 +5,55 @@
 		<title>测试</title>
 		<style>
 			.container {
-				width: 250px;
-				height: 300px;
+				width: 500px;
+				height: 280px;
 				background: #fff;
 				text-align: center;
-				padding: 10px;
+				padding: 20px;
 			}
+			
+			.foot {
+			    bottom: 10px;
+			    z-index: 1000;
+			    text-align: center;
+			    width: 100%;
+			    color: #000000;
+			    height: 20px;
+			}
+			ul{ margin: 0; padding: 0;}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<h3>请选择需要显示的单位</h3>
-			<div class="items" id="check">
-				<label>全选：</label>
-				<input type="checkbox" id="check-all" checked="checked" /><br/>
-				<label>西南财经大学：</label>
-				<input type="checkbox" name="input" id="swufe" value="swufe" checked="checked" /><br/>
-				<label>中央财经大学：</label>
-				<input type="checkbox" name="input" id="cufe" value="cufe" checked="checked" /><br/>
-				<label>复旦大学：</label>
-				<input type="checkbox" name="input" id="fdu" value="fdu" checked="checked" /><br/>
-				<label>上海交通大学：</label>
-				<input type="checkbox" name="input" id="sjtu" value="sjtu" checked="checked" /><br/>
-				<label>厦门大学：</label>
-				<input type="checkbox" name="input" id="xmu" value="xmu" checked="checked" /><br/>
-				<label>中国人民大学：</label>
-				<input type="checkbox" name="input" id="ruc" value="ruc" checked="checked" /><br/>
-				<label>中国计算机学会：</label>
-				<input type="checkbox" name="input" id="ccf" value="ccf"  checked="checked" /><br/>
-				<label>sci影响因子：</label>
-				<input type="checkbox" name="input" id="sciif" value="sciif"  checked="checked" /><br/>
-				<label>sci分区：</label>
-				<input type="checkbox" name="input" id="sci" value="sci"  checked="checked" /><br/>
-				<label>CSSCI南大核心：</label>
-				<input type="checkbox" name="input" id="cssci" value="cssci"  checked="checked" /><br/>
-			</div>
-			<div style="color: green" id="status"></div>
-			<button id="save" type="button" class="btn btn-success" style="width:20%">保存</button>
+			<h2>请选择需要显示的单位</h2>
+			<ul class="dowebok items" id="check">
+				<li><input type="checkbox" id="check-all" name="checkbox" value="all" checked="checked" data-labelauty="全选" ></li>
+				<li><input type="checkbox" id="swufe" name="checkbox" value="swufe" checked="checked" data-labelauty="西南财经大学"></li>
+				<li><input type="checkbox" id="cufe" value="cufe" checked="checked" name="checkbox" data-labelauty="中央财经大学"></li>
+				<li><input type="checkbox" id="fdu" value="fdu" checked="checked"  name="checkbox" data-labelauty="复旦大学"></li>
+				<li><input type="checkbox" id="sjtu" value="sjtu" checked="checked" name="checkbox" data-labelauty="上海交通大学"></li>
+				<li><input type="checkbox" id="xmu" value="xmu" checked="checked" name="checkbox" data-labelauty="厦门大学"></li>
+				<li><input type="checkbox" id="ruc" value="ruc" checked="checked" name="checkbox" data-labelauty="中国人民大学"></li>
+				<li><input type="checkbox" id="ccf" value="ccf" checked="checked" name="checkbox" data-labelauty="中国计算机学会"></li>
+				<li><input type="checkbox" id="sciif" value="sciif" checked="checked" name="checkbox" data-labelauty="SCI影响因子"></li>
+				<li><input type="checkbox" id="sci" value="sci" checked="checked" name="checkbox" data-labelauty="SCI"></li>
+				<li><input type="checkbox" id="cssci" value="cssci" checked="checked" name="checkbox" data-labelauty="CSSCI南大核心"></li>
+			</ul>
+			
+			<button id="save" class="button button--nina button--round-l button--text-thick button--inverted button--size-m" data-text="保存">
+				<span>S</span><span>a</span><span>v</span><span>e</span>
+			</button>
 		</div>
+		<div class="foot">© 2021 by <a target="_blank" href="https://github.com/Nixiak-nan/show_ranking">Nixak</a>  All rights reserved.</div>
+		
+		<div id="clickCanvas" style=" position:fixed;left:0;top:0;z-index:999999999;pointer-events:none;"></div>
+		<link rel="stylesheet" href="popup/css/jquery-labelauty.css">
+		<link rel="stylesheet" type="text/css" href="popup/css/buttons.css" />
+		<script src="popup/js/jquery-1.8.3.min.js"></script>
+		<script src="popup/js/jquery-labelauty.js"></script>
+		<script src="popup/js/beautiful_ball.js"></script>
+		
 		<script src="popup.js"></script>
+
 	</body>
 </html>

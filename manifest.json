@@ -1,7 +1,7 @@
 {
 	"name": "__MSG_appName__",
 	"manifest_version": 2,
-	"version": "3.1",
+	"version": "3.3",
 	"description": "__MSG_appDesc__",
 	"default_locale": "zh_CN",
 	"icons": {
@@ -160,10 +160,14 @@
 				"data/cssciRankingName.js",
 				"data/xmuRankingName.js",
 				"data/rucRankingName.js",
-                "script.js"
+                "script.js",
+				
+				"popup/js/jquery-1.8.3.min.js",
+				"popup/js/jquery-labelauty.js"
             ],
             "css": [
-                "style.css"
+                "style.css",
+				"popup/css/jquery-labelauty.css"
             ]
         }
     ]
