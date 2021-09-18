@@ -42,11 +42,11 @@
 
 ### 安装
 
-1. 谷歌应用商店下载 **（推荐）**：点击[SWUFE、CFF：显示会议/期刊等级](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
-3. Microsoft Edge应用商店下载：点击[SWUFE、CFF：显示会议/期刊等级](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)，点击安装即可。
-4. 离线安装方法（此为谷歌浏览器教程，其他浏览器步骤基本相似）：
+1. Microsoft Edge应用商店下载**（推荐）**：点击[SWUFE、CFF：显示会议/期刊等级](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)，点击安装即可。
+2. 谷歌应用商店下载 ：点击[SWUFE、CFF：显示会议/期刊等级](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
+3. 离线安装方法（此为谷歌浏览器教程，其他浏览器步骤基本相似）：
    - 从[GitHub](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)**下载**源代码
-   - 解压至**某个文件夹**中。（可删除picture文件夹，两个pdf文件，readme.md）
+   - 解压至**某个文件夹**中。（可删除picture、数据份文件文件夹，readme.md）
    - 打开谷歌浏览器，依次点击**右上方三个小点点，更多工具，扩展程序**。
    - 打开右上方**开发者模式**。
    - 点击左上角**加载已解压的扩展程序**。
@@ -176,8 +176,9 @@
 | 2021.8.25 | 修复了SWUFE推荐期刊的名字中，<br/>存在 **&、and或  - :** 所导致的无法识别的BUG |                          Nixiak-nan                          |
 | 2021.8.25 | 在谷歌学术中，将发起请求的时间，<br/>调整为1-2秒间的一个随机数，尽可能的躲过谷歌反爬机制（V2.7） |                          Nixiak-nan                          |
 | 2021.8.31 | 新增加央财，复旦，上交大，SCI，SCIIF数据，<br/>并支持选择数据集（V3.0） |                          Nixiak-nan                          |
-| 2021.9.2  | 增加全选按钮，新增厦门大学，中国人民大学、<br/>南大CSSCI核心，（V3.1） |                          Nixiak-nan                          |
-| 2021.9.4  | 将复旦缩写由FUDAN修正为FDU，<br/>并将主页显示的所有小写缩写，改为大写 |                          Nixiak-nan                          |
+| 2021.9.2  | 增加全选按钮，新增厦门大学，中国人民大学、<br/>南大CSSCI核心 |                          Nixiak-nan                          |
+| 2021.9.4  | 将复旦缩写由FUDAN修正为FDU，<br/>并将主页显示的所有小写缩写，改为大写（V3.1） |                          Nixiak-nan                          |
+| 2021.9.18 |                    美化了前端样式（V3.3）                    |                          Nixiak-nan                          |
 
 
 
