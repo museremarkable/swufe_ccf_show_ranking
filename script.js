@@ -2,7 +2,7 @@ var optionCheckd;
 
 function checkOption() {
 	chrome.storage.sync.get({
-		options: ['sci', 'swufe', 'ccf', 'cufe', 'sciif', 'fdu', 'sjtu', 'cssci', 'xmu', 'ruc']
+		options: ['sci', 'swufe', 'ccf', 'cufe', 'sciif', 'fdu', 'sjtu', 'cssci', 'xmu', 'ruc', 'cscd', 'uibe', 'swjtu']
 	}, function(items) {
 		optionCheckd = items.options;
 		start();
@@ -23,8 +23,17 @@ function start(){
 		if (optionCheckd.includes("sci")){
 			ieee.rankSpanListSwufe.push(sci.getRankingSpanEn);
 		}
+		if (optionCheckd.includes("uibe")){
+			ieee.rankSpanListSwufe.push(uibe.getRankingSpanEn);
+		}
 		if (optionCheckd.includes("sciif")){
 			ieee.rankSpanListSwufe.push(sciif.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("cscd")){
+			ieee.rankSpanListSwufe.push(cscd.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("swjtu")){
+			ieee.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
 		}
 		if (optionCheckd.includes("swufe")){
 			ieee.rankSpanListSwufe.push(swufe.getRankingSpanEn);
@@ -50,8 +59,17 @@ function start(){
 		if (optionCheckd.includes("sci")){
 			springer.rankSpanListSwufe.push(sci.getRankingSpanEn);
 		}
+		if (optionCheckd.includes("uibe")){
+			springer.rankSpanListSwufe.push(uibe.getRankingSpanEn);
+		}
 		if (optionCheckd.includes("sciif")){
 			springer.rankSpanListSwufe.push(sciif.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("cscd")){
+			springer.rankSpanListSwufe.push(cscd.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("swjtu")){
+			springer.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
 		}
 		if (optionCheckd.includes("swufe")){
 			springer.rankSpanListSwufe.push(swufe.getRankingSpanEn);
@@ -79,6 +97,9 @@ function start(){
 		if (optionCheckd.includes("sci")){
 			scholar.rankSpanListSwufe.push(sci.getRankingSpanEn);
 		}
+		if (optionCheckd.includes("uibe")){
+			scholar.rankSpanListSwufe.push(uibe.getRankingSpanEn);
+		}
 		if (optionCheckd.includes("sciif")){
 			scholar.rankSpanListSwufe.push(sciif.getRankingSpanEn);
 		}
@@ -93,6 +114,14 @@ function start(){
 		}
 		if (optionCheckd.includes("xmu")){
 			scholar.rankSpanListSwufe.push(xmu.getRankingSpan);
+		}
+		if (optionCheckd.includes("cscd")){
+			scholar.rankSpanListSwufe.push(cscd.getRankingSpanEn);
+			scholar.rankSpanListSwufe.push(cscd.getRankingSpan);
+		}
+		if (optionCheckd.includes("swjtu")){
+			scholar.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
+			scholar.rankSpanListSwufe.push(swjtu.getRankingSpan);
 		}
 		if (optionCheckd.includes("swufe")){
 			scholar.rankSpanListSwufe.push(swufe.getRankingSpanEn);
@@ -120,6 +149,12 @@ function start(){
 		if(optionCheckd.includes("xmu")){
 			zhiwang.rankingSpanProvider.push(xmu.getRankingSpan);	
 		}
+		if(optionCheckd.includes("cscd")){
+			zhiwang.rankingSpanProvider.push(cscd.getRankingSpan);
+		}
+		if(optionCheckd.includes("swjtu")){
+			zhiwang.rankingSpanProvider.push(swjtu.getRankingSpan);
+		}
 		if(optionCheckd.includes("swufe")){
 			zhiwang.rankingSpanProvider.push(swufe.getRankingSpan);
 		}
@@ -139,6 +174,9 @@ function start(){
 		if (optionCheckd.includes("sci")){
 			microsoft.rankingSpanProvider.push(sci.getRankingSpanEn);
 		}
+		if (optionCheckd.includes("uibe")){
+			microsoft.rankingSpanProvider.push(uibe.getRankingSpanEn);
+		}
 		if (optionCheckd.includes("sciif")){
 			microsoft.rankingSpanProvider.push(sciif.getRankingSpanEn);
 		}
@@ -153,6 +191,14 @@ function start(){
 		}
 		if (optionCheckd.includes("xmu")){
 			microsoft.rankingSpanProvider.push(xmu.getRankingSpan);
+		}
+		if (optionCheckd.includes("cscd")){
+			microsoft.rankingSpanProvider.push(cscd.getRankingSpanEn);
+			microsoft.rankingSpanProvider.push(cscd.getRankingSpan);
+		}
+		if (optionCheckd.includes("swjtu")){
+			microsoft.rankingSpanProvider.push(swjtu.getRankingSpanEn);
+			microsoft.rankingSpanProvider.push(swjtu.getRankingSpan);
 		}
 		if (optionCheckd.includes("swufe")){
 			microsoft.rankingSpanProvider.push(swufe.getRankingSpanEn);
@@ -180,6 +226,9 @@ function start(){
 			if (optionCheckd.includes("sci")){
 				webofscience.rankSpanListSwufe.push(sci.getRankingSpanEn);
 			}
+			if (optionCheckd.includes("uibe")){
+				webofscience.rankSpanListSwufe.push(uibe.getRankingSpanEn);
+			}
 			if (optionCheckd.includes("sciif")){
 				webofscience.rankSpanListSwufe.push(sciif.getRankingSpanEn);
 			}
@@ -194,6 +243,14 @@ function start(){
 			}
 			if (optionCheckd.includes("xmu")){
 				webofscience.rankSpanListSwufe.push(xmu.getRankingSpan);
+			}
+			if (optionCheckd.includes("cscd")){
+				webofscience.rankSpanListSwufe.push(cscd.getRankingSpanEn);
+				webofscience.rankSpanListSwufe.push(cscd.getRankingSpan);
+			}
+			if (optionCheckd.includes("swjtu")){
+				webofscience.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
+				webofscience.rankSpanListSwufe.push(swjtu.getRankingSpan);
 			}
 			if (optionCheckd.includes("swufe")){
 				webofscience.rankSpanListSwufe.push(swufe.getRankingSpanEn);
@@ -224,6 +281,9 @@ function start(){
 		if (optionCheckd.includes("sciif")){
 			newwebofscience.rankSpanListSwufe.push(sciif.getRankingSpanEn);
 		}
+		if (optionCheckd.includes("uibe")){
+			newwebofscience.rankSpanListSwufe.push(uibe.getRankingSpanEn);
+		}
 		if (optionCheckd.includes("fdu")){
 			newwebofscience.rankSpanListSwufe.push(fdu.getRankingSpan);
 		}
@@ -235,6 +295,14 @@ function start(){
 		}
 		if (optionCheckd.includes("xmu")){
 			newwebofscience.rankSpanListSwufe.push(xmu.getRankingSpan);
+		}
+		if (optionCheckd.includes("cscd")){
+			newwebofscience.rankSpanListSwufe.push(cscd.getRankingSpanEn);
+			newwebofscience.rankSpanListSwufe.push(cscd.getRankingSpan);
+		}
+		if (optionCheckd.includes("swjtu")){
+			newwebofscience.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
+			newwebofscience.rankSpanListSwufe.push(swjtu.getRankingSpan);
 		}
 		if (optionCheckd.includes("swufe")){
 			newwebofscience.rankSpanListSwufe.push(swufe.getRankingSpanEn);
@@ -271,6 +339,17 @@ function start(){
 		}
 		if (optionCheckd.includes("xmu")){
 			baiduxueshu.rankSpanListSwufe.push(xmu.getRankingSpan);
+		}
+		if (optionCheckd.includes("uibe")){
+			baiduxueshu.rankSpanListSwufe.push(uibe.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("cscd")){
+			baiduxueshu.rankSpanListSwufe.push(cscd.getRankingSpanEn);
+			baiduxueshu.rankSpanListSwufe.push(cscd.getRankingSpan);
+		}
+		if (optionCheckd.includes("swjtu")){
+			baiduxueshu.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
+			baiduxueshu.rankSpanListSwufe.push(swjtu.getRankingSpan);
 		}
 		if (optionCheckd.includes("swufe")){
 			baiduxueshu.rankSpanListSwufe.push(swufe.getRankingSpanEn);

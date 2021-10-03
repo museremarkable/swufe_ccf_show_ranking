@@ -19,7 +19,7 @@ function save_options() {
 
 function restore_options() {
 	chrome.storage.sync.get({
-		options: ['all', 'sci', 'swufe', 'ccf', 'cufe', 'sciif', 'fdu', 'sjtu', 'cssci', 'xmu', 'ruc']
+		options: ['all', 'sci', 'swufe', 'ccf', 'cufe', 'sciif', 'fdu', 'sjtu', 'cssci', 'xmu', 'ruc', 'cscd', 'uibe', 'swjtu']
 	}, function(items) {
 		document.getElementById('swufe').checked = items.options.includes('swufe');
 		document.getElementById('ccf').checked = items.options.includes('ccf');
@@ -31,6 +31,9 @@ function restore_options() {
 		document.getElementById('cssci').checked = items.options.includes('cssci');
 		document.getElementById('xmu').checked = items.options.includes('xmu');
 		document.getElementById('ruc').checked = items.options.includes('ruc');
+		document.getElementById('cscd').checked = items.options.includes('cscd');
+		document.getElementById('uibe').checked = items.options.includes('uibe');
+		document.getElementById('swjtu').checked = items.options.includes('swjtu');
 		document.getElementById('check-all').checked = items.options.includes('all');
 	});
 }

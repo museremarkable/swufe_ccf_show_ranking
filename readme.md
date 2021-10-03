@@ -1,5 +1,7 @@
-## 欢迎访问[Display paper conference/journal ranking](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)源代码资源库！
+## 欢迎访问Display paper conference/journal ranking源代码资源库！
 ### Welcome to visit source of Display paper conference/journal ranking!
+
+>  <strong >国内用户可以前往[CSDN](https://blog.csdn.net/weixin_49328057/article/details/113148625?spm=1001.2014.3001.5502)查看</strong>， <strong >源代码及数据请前往[Github](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)查看</strong>
 
 ### 简介
 
@@ -7,43 +9,40 @@
 
 **“显示论文会议/期刊等级”** 是一个浏览器扩展，它可以在各大论文网站上显示会议、期刊等级，具体的信息请您查看下方表格。
 
-> - 排名信息均在持续更新中，如果您有其他学校、单位的期刊排名，希望您可以发送给我，我将尽快更新（优先）。
-> - 各大网站均在持续支持中，如果您有其他需求，请在issues留言，我将尽快支持该网站。
-
 #### 高校：
 
-|                                                         | **西南财经大学** | 复旦大学 | 上海交通大学 | **中央财经大学** | 厦门大学 | 中国人民大学 |
-| :-----------------------------------------------------: | :--------------: | :------: | :----------: | :--------------: | :------: | :----------: |
-|                                                         |    **SWUFE**     | **FDU**  |   **SJTU**   |     **CUFE**     | **XMU**  |   **RUC**    |
-|            [**知网**](https://www.cnki.net/)            |      **✔**       |  **✔**   |    **✔**     |      **✔**       |  **✔**   |    **✔**     |
-|     **[微软学术](https://academic.microsoft.com)**      |      **✔**       |  **✔**   |    **✔**     |      **✔**       |  **✔**   |    **✔**     |
-| **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |      **✔**       |  **✔**   |    **✔**     |      **✔**       |  **✔**   |    **✔**     |
-|       **[Springer](https://link.springer.com/)**        |      **✔**       |          |              |      **✔**       |          |    **✔**     |
-|     **[IEEExplore](https://ieeexplore.ieee.org/)**      |      **✔**       |          |              |      **✔**       |          |    **✔**     |
-|             **[ACM](https://dl.acm.org/)**              |                  |          |              |                  |          |              |
-|         **[DBLP](https://dblp.uni-trier.de/)**          |                  |          |              |                  |          |              |
-|  **[web of science](http://apps.webofknowledge.com/)**  |      **✔**       |  **✔**   |    **✔**     |      **✔**       |  **✔**   |    **✔**     |
-|        **[百度学术](https://xueshu.baidu.com/)**        |      **✔**       |  **✔**   |    **✔**     |      **✔**       |  **✔**   |    **✔**     |
+|                        学校名称                         | **西南财经大学** |  复旦   | 上海交大 | **央财** |  厦大   |  人大   | 西南交大  |   贸大   |
+| :-----------------------------------------------------: | :--------------: | :-----: | :------: | :------: | :-----: | :-----: | :-------: | :------: |
+|                      **英文缩写**                       |    **SWUFE**     | **FDU** | **SJTU** | **CUFE** | **XMU** | **RUC** | **SWJTU** | **UIBE** |
+|            **[知网](https://www.cnki.net/)**            |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |          |
+|     **[微软学术](https://academic.microsoft.com)**      |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
+| **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
+|       **[Springer](https://link.springer.com/)**        |      **✔**       |         |          |  **✔**   |         |  **✔**  |   **✔**   |  **✔**   |
+|     **[IEEExplore](https://ieeexplore.ieee.org/)**      |      **✔**       |         |          |  **✔**   |         |  **✔**  |   **✔**   |  **✔**   |
+|             **[ACM](https://dl.acm.org/)**              |                  |         |          |          |         |         |           |          |
+|         **[DBLP](https://dblp.uni-trier.de/)**          |                  |         |          |          |         |         |           |          |
+|  **[web of science](http://apps.webofknowledge.com/)**  |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
+|        **[百度学术](https://xueshu.baidu.com/)**        |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
 
 #### 单位：
 
-|                                                         | **中科院分区** | **中科院影响因子** | **中国计算机学会** | 南大核心  |
-| :-----------------------------------------------------: | :------------: | :----------------: | :----------------: | :-------: |
-|                                                         |    **SCI**     |     **SCIIF**      |      **CCF**       | **CSSCI** |
-|            [**知网**](https://www.cnki.net/)            |                |                    |                    |     ✔     |
-|     [**微软学术**](https://academic.microsoft.com)      |     **✔**      |       **✔**        |       **✔**        |     ✔     |
-| **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |     **✔**      |       **✔**        |       **✔**        |     ✔     |
-|       [**Springer**](https://link.springer.com/)        |     **✔**      |       **✔**        |       **✔**        |           |
-|     **[IEEExplore](https://ieeexplore.ieee.org/)**      |     **✔**      |       **✔**        |       **✔**        |           |
-|             **[ACM](https://dl.acm.org/)**              |                |                    |       **✔**        |           |
-|         **[DBLP](https://dblp.uni-trier.de/)**          |                |                    |       **✔**        |           |
-|  **[web of science](http://apps.webofknowledge.com/)**  |     **✔**      |       **✔**        |       **✔**        |     ✔     |
-|        **[百度学术](https://xueshu.baidu.com/)**        |     **✔**      |       **✔**        |       **✔**        |     ✔     |
+|                        单位名称                         | **中科院分区** | **中科院影响因子** | **中国计算机学会** | 南大核心  | 中国科学引文数据库 |
+| :-----------------------------------------------------: | :------------: | :----------------: | :----------------: | :-------: | :----------------: |
+|                      **英文缩写**                       |    **SCI**     |     **SCIIF**      |      **CCF**       | **CSSCI** |      **CSCD**      |
+|            [**知网**](https://www.cnki.net/)            |                |                    |                    |     ✔     |         ✔          |
+|     [**微软学术**](https://academic.microsoft.com)      |     **✔**      |       **✔**        |         ✔          |     ✔     |         ✔          |
+| **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |     **✔**      |       **✔**        |       **✔**        |     ✔     |         ✔          |
+|       [**Springer**](https://link.springer.com/)        |     **✔**      |       **✔**        |       **✔**        |           |         ✔          |
+|     **[IEEExplore](https://ieeexplore.ieee.org/)**      |     **✔**      |       **✔**        |       **✔**        |           |         ✔          |
+|             **[ACM](https://dl.acm.org/)**              |                |                    |       **✔**        |           |                    |
+|         **[DBLP](https://dblp.uni-trier.de/)**          |                |                    |       **✔**        |           |                    |
+|  **[web of science](http://apps.webofknowledge.com/)**  |     **✔**      |       **✔**        |       **✔**        |     ✔     |         ✔          |
+|        **[百度学术](https://xueshu.baidu.com/)**        |     **✔**      |       **✔**        |       **✔**        |     ✔     |         ✔          |
 
 ### 安装
 
-1. Microsoft Edge应用商店下载**（推荐）**：点击[SWUFE、CFF：显示会议/期刊等级](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)，点击安装即可。
-2. 谷歌应用商店下载 ：点击[SWUFE、CFF：显示会议/期刊等级](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
+1. Microsoft Edge应用商店下载**（推荐）**：点击[显示会议/期刊等级](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)，点击安装即可。
+2. 谷歌应用商店下载 ：点击[显示会议/期刊等级](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
 3. 离线安装方法（此为谷歌浏览器教程，其他浏览器步骤基本相似）：
    - 从[GitHub](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)**下载**源代码
    - 解压至**某个文件夹**中。（可删除picture、数据份文件文件夹，readme.md）
@@ -60,8 +59,6 @@
 4. **此插件不会收集用户任何信息，请您放心使用。**
 
 ### 项目展示
-
-<strong style="color:#ff0000;">若Github不能显示图片，请科学上网，或者前往[CSDN](https://blog.csdn.net/weixin_49328057/article/details/113148625?spm=1001.2014.3001.5502)查看</strong>
 
 - **点击浏览器右上角插件图标，即可进入插件设置页面，在此您可以根据自己的需求，选择需要展示的单位信息，保存后，重新刷新即可。**
 
@@ -144,7 +141,7 @@
 
   > 这是因为该插件对于部分显示不全的期刊名字，通过点击下方的引用按钮，获得期刊全称，这一动作，容易触发谷歌学术的反爬机制。现已经以1-2秒之间的随机数点击引用按钮，尽可能跳过谷歌反爬机制。经过作者测试，在谷歌学术查看大概25页时，将会触发反爬机制。
 
-### 数据来源
+### [数据来源](https://github.com/Nixiak-nan/show_ranking/tree/master/%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6)
 
 - CCF:  《中国计算机学会推荐国际学术会议和期刊目录-2019》，大约620种
 - SWUFE :《西南财经大学学术期刊目录2018》，中文约600种，英文约1700种（已经去重）
@@ -156,6 +153,9 @@
 - XMU：《厦门大学人文社科核心学术期刊目录（2017）》，只有中文，约180种。
 - CSSCI：《中文社会科学引文索引（CSSCI来源期刊目录2021-2022》，只有中文，约620种。
 - RUC：《中国人民大学核心期刊目录2017》，中文约200，英文约1300种。
+- CSCD：《中国科学引文数据库来源期刊列表（2021-2022 年度）》，中文约1018种，英文约240种。
+- SWJTU：《西南交通大学学术期刊分级目录（2017年修订版）》，中文约800种，英文约4800种。
+- UIBE：《对外经济贸易大学科研奖励外文核心期刊专题分类目录》英文约720种。
 
 ### 更新日志
 
@@ -179,6 +179,7 @@
 | 2021.9.2  | 增加全选按钮，新增厦门大学，中国人民大学、<br/>南大CSSCI核心 |                          Nixiak-nan                          |
 | 2021.9.4  | 将复旦缩写由FUDAN修正为FDU，<br/>并将主页显示的所有小写缩写，改为大写（V3.1） |                          Nixiak-nan                          |
 | 2021.9.18 |                    美化了前端样式（V3.3）                    |                          Nixiak-nan                          |
+| 2021.10.3 | 新增西南交通大学，对外经济贸易大学，中国科学引文数据库（3.4） |                          Nixiak-nan                          |
 
 
 
