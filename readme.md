@@ -62,7 +62,7 @@
 
 - **点击浏览器右上角插件图标，即可进入插件设置页面，在此您可以根据自己的需求，选择需要展示的单位信息，保存后，重新刷新即可。**
 
-  <img src="picture/index.png" style="zoom:67%;" />
+  <img src="picture/index2.png" style="zoom:67%;" />
 
 - **[知网](https://www.cnki.net/)展示：该网站支持使用[swufe-webvpn](https://webvpn.swufe.edu.cn/)登录知网的链接。**
 
