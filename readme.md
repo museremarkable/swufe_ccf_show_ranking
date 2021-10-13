@@ -167,7 +167,7 @@
 | 2021.6.21 |            支持微软学术、IEEE、springer显示swufe             |                          Nixiak-nan                          |
 | 2021.6.23 | 成功在[谷歌商店](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)上架 |                          Nixiak-nan                          |
 | 2021.6.30 |              增加对web of science显示swufe等级               |                          Nixiak-nan                          |
-| 2021.6.30 | 成功在[火狐商店](https://addons.mozilla.org/zh-CN/firefox/addon/swufe_ccf_show_rank/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)上架 |                          Nixiak-nan                          |
+| 2021.6.30 | 成功在[火狐商店](https://addons.mozilla.org/zh-CN/firefox/addon/swufe_ccf_show_rank/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)上架（现已经停止更新） |                          Nixiak-nan                          |
 | 2021.7.1  |            增加对百度学术显示swufe等级（中、英）             |                          Nixiak-nan                          |
 | 2021.7.10 |      增加对**新版**web of science显示swufe等级（V2.5）       |                          Nixiak-nan                          |
 | 2021.8.2  | 修改了谷歌学术显示CCF的方式，详情[点此查看](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/issues/7) |                          Nixiak-nan                          |
