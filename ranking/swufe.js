@@ -6,7 +6,14 @@ swufe.getRankingInfo = function(name) {
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
 
-	let ranking = swufe.rankingFullName[name];
+	let ranking;
+	let name_list = processName(name);
+	for(let i = 0; i < name_list.length; i++) {
+		ranking = swufe.rankingFullName[name_list[i]];
+		if(ranking != null){
+			break;
+		}
+	}
 	if (ranking == null) {
 		ranking = ""
 	}
@@ -23,30 +30,21 @@ swufe.getRankingInfoEn = function(name) {
 	let rankingInfo = {};
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
-	let ranking = swufe.rankingFullNameEn[name];
-	if (ranking == null){
-		ranking = swufe.rankingFullNameEn[name.replace("AND","&")];
+	let ranking;
+	let name_list = processNameEn(name);
+	for(let i = 0; i < name_list.length; i++) {
+		ranking = swufe.rankingFullNameEn[name_list[i]];
+		if(ranking != null){
+			break;
+		}
 	}
 	if (ranking == null) {
-		ranking = ""
-		var pattern = /(?<=THE ).*/;
-		if (name.match(pattern)){
-			var new_ranking = swufe.rankingFullNameEn[name.match(pattern)[0]];
-			if (new_ranking == null){
-				new_ranking = swufe.rankingFullNameEn[name.match(pattern)[0].replace("AND","&")];
-				if(new_ranking){
-					ranking = "SWUFE " + new_ranking;
-				}
-			}else{
-				ranking = "SWUFE " + new_ranking;
-			}
-		}
-	} else {
+		ranking = "";
+	}else{
 		ranking = "SWUFE " + ranking;
 	}
-
 	rankingInfo.rankings.push(ranking);
-
+	
 	return rankingInfo;
 }
 

@@ -6,7 +6,14 @@ cufe.getRankingInfo = function(name) {
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
 
-	let ranking = cufe.rankingFullName[name];
+	let ranking;
+	let name_list = processName(name);
+	for(let i = 0; i < name_list.length; i++) {
+		ranking = cufe.rankingFullName[name_list[i]];
+		if(ranking != null){
+			break;
+		}
+	}
 	if (ranking == null) {
 		ranking = ""
 	}
@@ -23,33 +30,21 @@ cufe.getRankingInfoEn = function(name) {
 	let rankingInfo = {};
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
-	let ranking = cufe.rankingFullNameEn[name];
-	if (ranking == null){
-		ranking = cufe.rankingFullNameEn[name.replace("AND","&")];
-	}
-	if (ranking == null){
-		ranking = cufe.rankingFullNameEn[name.replace("&","AND")];
+	let ranking;
+	let name_list = processNameEn(name);
+	for(let i = 0; i < name_list.length; i++) {
+		ranking = cufe.rankingFullNameEn[name_list[i]];
+		if(ranking != null){
+			break;
+		}
 	}
 	if (ranking == null) {
-		ranking = ""
-		var pattern = /(?<=THE ).*/;
-		if (name.match(pattern)){
-			var new_ranking = cufe.rankingFullNameEn[name.match(pattern)[0]];
-			if (new_ranking == null){
-				new_ranking = cufe.rankingFullNameEn[name.match(pattern)[0].replace("AND","&")];
-				if(new_ranking){
-					ranking = "CUFE " + new_ranking;
-				}
-			}else{
-				ranking = "CUFE " + new_ranking;
-			}
-		}
-	} else {
+		ranking = "";
+	}else{
 		ranking = "CUFE " + ranking;
 	}
-
 	rankingInfo.rankings.push(ranking);
-
+	
 	return rankingInfo;
 }
 

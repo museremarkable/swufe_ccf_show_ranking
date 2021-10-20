@@ -23,39 +23,21 @@ sci.getRankingInfoEn = function(name) {
 	let rankingInfo = {};
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
-	let ranking = sci.rankingFullNameEn[name];
-	if (ranking == null){
-		ranking = sci.rankingFullNameEn[name.replace("AND","&")];
-	}
-	if (ranking == null){
-		ranking = sci.rankingFullNameEn[name.replace("&","AND")];
-	}
-	if (ranking == null){
-		ranking = sci.rankingFullNameEn[name.replace("-"," ")];
-	}
-	if (ranking == null){
-		ranking = sci.rankingFullNameEn[name.replace(":"," ")];
+	let ranking;
+	let name_list = processNameEn(name);
+	for(let i = 0; i < name_list.length; i++) {
+		ranking = sci.rankingFullNameEn[name_list[i]];
+		if(ranking != null){
+			break;
+		}
 	}
 	if (ranking == null) {
-		ranking = ""
-		var pattern = /(?<=THE ).*/;
-		if (name.match(pattern)){
-			var new_ranking = sci.rankingFullNameEn[name.match(pattern)[0]];
-			if (new_ranking == null){
-				new_ranking = sci.rankingFullNameEn[name.match(pattern)[0].replace("AND","&")];
-				if(new_ranking){
-					ranking = "SCI " + new_ranking;
-				}
-			}else{
-				ranking = "SCI " + new_ranking;
-			}
-		}
-	} else {
+		ranking = "";
+	}else{
 		ranking = "SCI " + ranking;
 	}
-
 	rankingInfo.rankings.push(ranking);
-
+	
 	return rankingInfo;
 }
 

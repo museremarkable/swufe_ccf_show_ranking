@@ -6,7 +6,14 @@ ruc.getRankingInfo = function(name) {
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
 
-	let ranking = ruc.rankingFullName[name];
+	let ranking;
+	let name_list = processName(name);
+	for(let i = 0; i < name_list.length; i++) {
+		ranking = ruc.rankingFullName[name_list[i]];
+		if(ranking != null){
+			break;
+		}
+	}
 	if (ranking == null) {
 		ranking = ""
 	}
@@ -23,39 +30,21 @@ ruc.getRankingInfoEn = function(name) {
 	let rankingInfo = {};
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
-	let ranking = ruc.rankingFullNameEn[name];
-	if (ranking == null){
-		ranking = ruc.rankingFullNameEn[name.replace("AND","&")];
-	}
-	if (ranking == null){
-		ranking = ruc.rankingFullNameEn[name.replace("&","AND")];
-	}
-	if (ranking == null){
-		ranking = ruc.rankingFullNameEn[name.replace("‐","-")];
-	}
-	if (ranking == null){
-		ranking = ruc.rankingFullNameEn[name.replace("‐"," ")];
+	let ranking;
+	let name_list = processNameEn(name);
+	for(let i = 0; i < name_list.length; i++) {
+		ranking = ruc.rankingFullNameEn[name_list[i]];
+		if(ranking != null){
+			break;
+		}
 	}
 	if (ranking == null) {
-		ranking = ""
-		var pattern = /(?<=THE ).*/;
-		if (name.match(pattern)){
-			var new_ranking = ruc.rankingFullNameEn[name.match(pattern)[0]];
-			if (new_ranking == null){
-				new_ranking = ruc.rankingFullNameEn[name.match(pattern)[0].replace("AND","&")];
-				if(new_ranking){
-					ranking = "RUC " + new_ranking;
-				}
-			}else{
-				ranking = "RUC " + new_ranking;
-			}
-		}
-	} else {
+		ranking = "";
+	}else{
 		ranking = "RUC " + ranking;
 	}
-
 	rankingInfo.rankings.push(ranking);
-
+	
 	return rankingInfo;
 }
 

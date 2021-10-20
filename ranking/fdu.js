@@ -6,7 +6,14 @@ fdu.getRankingInfo = function(name) {
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
 
-	let ranking = fdu.rankingFullName[name];
+	let ranking;
+	let name_list = processName(name);
+	for(let i = 0; i < name_list.length; i++) {
+		ranking = fdu.rankingFullName[name_list[i]];
+		if(ranking != null){
+			break;
+		}
+	}
 	if (ranking == null) {
 		ranking = ""
 	}

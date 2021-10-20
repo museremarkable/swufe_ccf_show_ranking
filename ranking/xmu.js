@@ -5,10 +5,17 @@ xmu.getRankingInfo = function(name) {
 	let rankingInfo = {};
 	rankingInfo.rankings = [];
 	rankingInfo.info = '';
-
-	let ranking = xmu.rankingFullName[name];
+	
+	let ranking;
+	let name_list = processName(name);
+	for(let i = 0; i < name_list.length; i++) {
+		ranking = xmu.rankingFullName[name_list[i]];
+		if(ranking != null){
+			break;
+		}
+	}
 	if (ranking == null) {
-		ranking = ""
+		ranking = "";
 	}
 	
 	rankingInfo.rankings.push(ranking);

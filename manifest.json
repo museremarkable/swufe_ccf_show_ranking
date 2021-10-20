@@ -1,7 +1,7 @@
 {
 	"name": "__MSG_appName__",
 	"manifest_version": 2,
-	"version": "3.6",
+	"version": "3.7",
 	"description": "__MSG_appDesc__",
 	"default_locale": "zh_CN",
 	"icons": {
@@ -118,15 +118,20 @@
                 "https://scholar.google.si/*",
                 "https://scholar.google.sk/*",
                 "https://link.springer.com/search*",
-                "https://www.engineeringvillage.com/search*"
+                "https://www.engineeringvillage.com/search*",
+				"https://www.aminer.cn/*",
+				"http://www.aminer.cn/*"
             ],
             "js": [
                 "lib/jquery-3.3.1.min.js",
 				
+                "ranking/utils.js",
                 "ranking/ccf.js",
 				"ranking/swufe.js",
 				"ranking/cufe.js",
 				"ranking/sci.js",
+				"ranking/sciZhongBase.js",
+				"ranking/sciZhongUp.js",
 				"ranking/sciif.js",
 				"ranking/fdu.js",
 				"ranking/sjtu.js",
@@ -149,6 +154,7 @@
 				"site/webofscience.js",
 				"site/newwebofscience.js",
 				"site/baiduxueshu.js",
+				"site/aminer.js",
 				
                 "data/ccf-index.js",
                 "data/ccf-rank.js",
@@ -158,6 +164,8 @@
 				"data/cufeRankingName.js",
 				"data/sciImpactFactor.js",
 				"data/sciRankingName.js",
+				"data/sciZhongBaseRankingName.js",
+				"data/sciZhongUpRankingName.js",
 				"data/fduRankingName.js",
 				"data/sjtuRankingName.js",
 				"data/cssciRankingName.js",

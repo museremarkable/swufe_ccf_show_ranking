@@ -89,6 +89,7 @@ ccf.rank = [
 	["Symposium on High-Performance Interconnects", "C"],
 	["VLSI Test Symposium", "C"],
 	["IEEE Journal of Selected Areas in Communications", "A"],
+	["IEEE Journal on Selected Areas in Communications", "A"],
 	["IEEE Transactions on Mobile Computing", "A"],
 	["IEEE/ACM Transactions on Networking", "A"],
 	["ACM Transactions on Internet Technology", "B"],
