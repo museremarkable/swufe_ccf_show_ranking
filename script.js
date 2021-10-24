@@ -451,6 +451,95 @@ function start(){
 			aminer.rankSpanListSwufe.push(swufe.getRankingSpan);
 		}	
 		aminer.start();
+	}else if (location.href.startsWith("https://pubmed.ncbi.nlm.nih.gov/") || location.href.startsWith(
+			"http://pubmed.ncbi.nlm.nih.gov/")){
+		if (optionCheckd.includes("ccf")){
+			pubmed.rankSpanListSwufe.push(swufe.CCFgetRankingSpanEn);
+		}
+		if(optionCheckd.includes("cufe")){
+			pubmed.rankSpanListSwufe.push(cufe.getRankingSpanEn);
+		}
+		if(optionCheckd.includes("ruc")){
+			pubmed.rankSpanListSwufe.push(ruc.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sci")){
+			pubmed.rankSpanListSwufe.push(sci.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sci-up")){
+			pubmed.rankSpanListSwufe.push(sciZhongBase.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sci-base")){
+			pubmed.rankSpanListSwufe.push(sciZhongUp.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sciif")){
+			pubmed.rankSpanListSwufe.push(sciif.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("uibe")){
+			pubmed.rankSpanListSwufe.push(uibe.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("cscd")){
+			pubmed.rankSpanListSwufe.push(cscd.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("swjtu")){
+			pubmed.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("swufe")){
+			pubmed.rankSpanListSwufe.push(swufe.getRankingSpanEn);
+		}	
+		pubmed.start();
+	}else if (location.href.startsWith("https://cn.bing.com/academic/") || location.href.startsWith(
+			"http://cn.bing.com/academic/")) {
+		if (optionCheckd.includes("ccf")){
+			bing.rankSpanListSwufe.push(swufe.CCFgetRankingSpanEn);
+		}
+		if(optionCheckd.includes("cufe")){
+			bing.rankSpanListSwufe.push(cufe.getRankingSpan);
+			bing.rankSpanListSwufe.push(cufe.getRankingSpanEn);
+		}
+		if(optionCheckd.includes("ruc")){
+			bing.rankSpanListSwufe.push(ruc.getRankingSpan);
+			bing.rankSpanListSwufe.push(ruc.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sci")){
+			bing.rankSpanListSwufe.push(sci.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sci-base")){
+			bing.rankSpanListSwufe.push(sciZhongBase.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sci-up")){
+			bing.rankSpanListSwufe.push(sciZhongUp.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sciif")){
+			bing.rankSpanListSwufe.push(sciif.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("fdu")){
+			bing.rankSpanListSwufe.push(fdu.getRankingSpan);
+		}
+		if (optionCheckd.includes("sjtu")){
+			bing.rankSpanListSwufe.push(sjtu.getRankingSpan);
+		}
+		if (optionCheckd.includes("cssci")){
+			bing.rankSpanListSwufe.push(cssci.getRankingSpan);
+		}
+		if (optionCheckd.includes("xmu")){
+			bing.rankSpanListSwufe.push(xmu.getRankingSpan);
+		}
+		if (optionCheckd.includes("uibe")){
+			bing.rankSpanListSwufe.push(uibe.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("cscd")){
+			bing.rankSpanListSwufe.push(cscd.getRankingSpanEn);
+			bing.rankSpanListSwufe.push(cscd.getRankingSpan);
+		}
+		if (optionCheckd.includes("swjtu")){
+			bing.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
+			bing.rankSpanListSwufe.push(swjtu.getRankingSpan);
+		}
+		if (optionCheckd.includes("swufe")){
+			bing.rankSpanListSwufe.push(swufe.getRankingSpanEn);
+			bing.rankSpanListSwufe.push(swufe.getRankingSpan);
+		}	
+	bing.start();
 	}
 }
 

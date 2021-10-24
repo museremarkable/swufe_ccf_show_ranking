@@ -19,11 +19,12 @@
 | **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
 |       **[Springer](https://link.springer.com/)**        |      **✔**       |         |          |  **✔**   |         |  **✔**  |   **✔**   |  **✔**   |
 |     **[IEEExplore](https://ieeexplore.ieee.org/)**      |      **✔**       |         |          |  **✔**   |         |  **✔**  |   **✔**   |  **✔**   |
-|             **[ACM](https://dl.acm.org/)**              |                  |         |          |          |         |         |           |          |
 |         **[DBLP](https://dblp.uni-trier.de/)**          |                  |         |          |          |         |         |           |          |
 |  **[web of science](http://apps.webofknowledge.com/)**  |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
 |        **[百度学术](https://xueshu.baidu.com/)**        |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
+|          **[必应学术](https://cn.bing.com/)**           |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
 |          **[Aminer](https://www.aminer.cn/)**           |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
+|     **[PubMed](https://pubmed.ncbi.nlm.nih.gov/)**      |      **✔**       |         |          |  **✔**   |         |  **✔**  |   **✔**   |  **✔**   |
 
 #### 单位：
 
@@ -35,11 +36,12 @@
 | **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |    **✔**     |    **✔**     |    ✔    |       **✔**        |     ✔     |         ✔          |
 |       [**Springer**](https://link.springer.com/)        |    **✔**     |    **✔**     |    ✔    |       **✔**        |           |         ✔          |
 |     **[IEEExplore](https://ieeexplore.ieee.org/)**      |    **✔**     |    **✔**     |    ✔    |       **✔**        |           |         ✔          |
-|             **[ACM](https://dl.acm.org/)**              |              |              |         |       **✔**        |           |                    |
 |         **[DBLP](https://dblp.uni-trier.de/)**          |              |              |         |       **✔**        |           |                    |
 |  **[web of science](http://apps.webofknowledge.com/)**  |    **✔**     |    **✔**     |    ✔    |       **✔**        |     ✔     |         ✔          |
 |        **[百度学术](https://xueshu.baidu.com/)**        |    **✔**     |    **✔**     |    ✔    |       **✔**        |     ✔     |         ✔          |
+|          **[必应学术](https://cn.bing.com/)**           |    **✔**     |    **✔**     |    ✔    |       **✔**        |     ✔     |         ✔          |
 |          **[Aminer](https://www.aminer.cn/)**           |    **✔**     |    **✔**     |    ✔    |       **✔**        |     ✔     |         ✔          |
+|     **[PubMed](https://pubmed.ncbi.nlm.nih.gov/)**      |    **✔**     |    **✔**     |    ✔    |       **✔**        |           |         ✔          |
 
 ### 安装
 
@@ -57,8 +59,8 @@
 
 1. **插件安装成功后，浏览指定网站时会自动运行，无需手动操作。**
 2. **点击浏览器右上角插件图标，即可进入插件设置页面。**
-3. **在此您可以根据自己的需求，选择需要展示的单位信息，保存后，重新刷新即可。**
-4. **此插件不会收集用户任何信息，请您放心使用。**
+3. **在此您可以根据自己的需求，选择需要展示的单位信息，保存后，重新刷新即可。**.
+4. **本插件不会收集用户任何信息，完全开源，永久免费，请您放心使用。**
 
 ### 项目展示
 
@@ -133,7 +135,15 @@
 
   <img src="picture/aminer2.png" style="zoom:67%;" />
 
-- **在  [DBLP](https://dblp.uni-trier.de/), [ACM](https://dl.acm.org/)展示**：
+- **在[Pubmed](https://pubmed.ncbi.nlm.nih.gov/)展示，可以与Scholarscope兼容：**
+
+  ![](picture/pubmed.png)
+
+- **在[必应学术](https://cn.bing.com/)展示：**
+
+  <img src="picture/bing.png" style="zoom: 67%;" />
+
+- **在  [DBLP](https://dblp.uni-trier.de/)展示**：
 
   在此不做演示，请前往[CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)仓库查看，在此再次感谢原作者的无私奉献。
 
@@ -142,8 +152,6 @@
 - **本插件提供的等级排名仅供参考，具体的排名信息，请以标准文件为准。**
 
 - **部分期刊、会议无法识别的原因，请查看[部分CCF会议无法显示排名 #7](https://github.com/Nixiak-nan/swufe_ccf_show_ranking/issues/7)**
-
-- **若无法使用，请更新谷歌、Edge浏览器至最新版本**
 
 - **若触发谷歌学术反爬机制，请您清空浏览器缓存，更换代理，关闭浏览器后重新打开谷歌学术**
 
@@ -194,6 +202,7 @@
 | 2021.10.8  |                  补充了西南交大数据（3.6）                   |   Nixiak-nan   |
 | 2021.10.14 |          优化了一些细节，增加了Aminer显示中、英等级          |   Nixiak-nan   |
 | 2021.10.20 | 更新了SCI分区为2020年科睿唯安最新，<br/>增加了SCI中科院分区top1（3.7） |   Nixiak-nan   |
+| 2021.10.24 |                     支持pubmed，必应学术                     |   Nixiak-nan   |
 
 
 

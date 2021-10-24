@@ -13,12 +13,28 @@ function processNameEn(name){
 	name_list.push(name.replace("-",": ").trim());
 	name_list.push(name.replace("-",":").trim());
 	name_list.push(name.replace(": ","-").trim());
-	name_list.push(name.replace(":",":").trim());
+	name_list.push(name.replace("：",":").trim());
+	name_list.push(name.replace(".","").trim());
+	name_list.push(name.split(":")[0].trim());
+	if (name.indexOf("=") != -1 ){
+		name_list.push(name.replace(" = ","-").trim());
+		temp_name_array = name.split("=");
+		for(j = 0; j < temp_name_array.length; j++) {
+		   name_list.push(temp_name_array[j]);
+		} 
+	}
 	
 	if (name.indexOf("(") != -1 ){ 
-		let temp1 = name.split("(")[0]
-		let temp2 = name.split(")")[1]
-		name_list.push(temp1 + temp2);
+		let temp1 = name.split("(")[0];
+		name_list.push(temp1.trim());
+		let temp2 = name.split(")")[1];
+		let temp_title1 = temp1 + temp2;
+		name_list.push(temp_title1.trim());
+		
+		temp3 = name.split("(")[1];
+		temp4 = temp3.split(")")[0];
+		let temp_title2 = temp3 + temp4;
+		name_list.push(temp_title2.trim());
 	}
 	
 	let pattern = /(?<=THE ).*/;

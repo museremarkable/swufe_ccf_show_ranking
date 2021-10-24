@@ -120,7 +120,9 @@
                 "https://link.springer.com/search*",
                 "https://www.engineeringvillage.com/search*",
 				"https://www.aminer.cn/*",
-				"http://www.aminer.cn/*"
+				"http://www.aminer.cn/*",
+				"https://pubmed.ncbi.nlm.nih.gov/*",
+				"https://cn.bing.com/*"
             ],
             "js": [
                 "lib/jquery-3.3.1.min.js",
@@ -155,6 +157,8 @@
 				"site/newwebofscience.js",
 				"site/baiduxueshu.js",
 				"site/aminer.js",
+				"site/pubmed.js",
+				"site/bing.js",
 				
                 "data/ccf-index.js",
                 "data/ccf-rank.js",
@@ -174,6 +178,7 @@
 				"data/cscdRankingName.js",
 				"data/uibeRankingName.js",
 				"data/swjtuRankingName.js",
+				"data/abbName.js",
                 "script.js",
 				
 				"popup/js/jquery-1.8.3.min.js",
