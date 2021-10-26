@@ -203,6 +203,7 @@
 | 2021.10.14 |          优化了一些细节，增加了Aminer显示中、英等级          |   Nixiak-nan   |
 | 2021.10.20 | 更新了SCI分区为2020年科睿唯安最新，<br/>增加了SCI中科院分区top1（3.7） |   Nixiak-nan   |
 | 2021.10.24 |        支持pubmed，必应学术，改名为easyScholar（3.8）        |   Nixiak-nan   |
+| 2021.10.26 |               修复了Aminer、WOS上重复显示的BUG               |   Nixiak-nan   |
 
 
 

@@ -16,8 +16,9 @@ microsoft.addRankings = function() {
 		let result = $(this);
 		var parent = result.parent("a");
 		var flag = $(parent);
-
-		if (flag.find("span").length < 3) {
+		let flag1 = flag.find("span[class$='none']");
+		let flag2 = flag.find("span.ccf-ranking");
+		if (flag1.length == 0 && flag2.length == 0) {
 			let source = result.text();
 			if (source.length != 0) {
 				let name = source;

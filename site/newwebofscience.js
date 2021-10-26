@@ -14,7 +14,8 @@ newwebofscience.addRankings = function() {
 
 		let result = $(this);
 		swufe_list = result.find("span[class$='none']");
-		if (swufe_list.length == 0) {
+		swufe_list2 = result.find("span.ccf-ranking");
+		if (swufe_list.length == 0 && swufe_list2.length == 0) {
 			let source = result.find("span[lang='en']");
 			let name = source.text().trim();
 			if (name.length != 0) {

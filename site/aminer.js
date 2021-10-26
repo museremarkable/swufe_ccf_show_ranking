@@ -5,7 +5,7 @@ aminer.rankSpanListSwufe = [];
 aminer.start = function () {
    setInterval(function() {
    	aminer.addRankings();
-   }, 2000);
+   }, 1000);
 }
 
 
@@ -16,9 +16,9 @@ aminer.addRankings = function () {
 		
         let source = result.find("div.venue-line");
 		let name = source.html().split("<span>")[0];
-		let flag = result.find("div.title-line a.title-link span");
-		console.log(flag.length)
-        if (name != undefined && name.length != 0 && flag.length <= 5) {
+		let flag1 = result.find("div.title-line a.title-link span.ccf-ranking");
+		let flag2 = result.find("div.title-line a.title-link span[class$='none']");
+        if (name != undefined && name.length != 0 && flag1.length == 0 && flag2.length == 0) {
 			// console.log(name) 
 			for (let getRankingSpan of aminer.rankSpanListSwufe) {
 			    title = result.find("div.title-line span.paper-title");
