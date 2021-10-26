@@ -1,5 +1,5 @@
-## 欢迎访问Display paper conference/journal ranking源代码资源库！
-### Welcome to visit source of Display paper conference/journal ranking!
+## 欢迎访问easyScholar源代码资源库！
+### Welcome to visit source of easyScholar!
 
 >  <strong >国内用户可以前往[CSDN](https://blog.csdn.net/weixin_49328057/article/details/113148625?spm=1001.2014.3001.5502)查看</strong>， <strong >源代码及数据请前往[Github](https://github.com/Nixiak-nan/swufe-ccf_show_ranking)查看</strong>
 
@@ -7,7 +7,7 @@
 
 > “显示论文会议/期刊等级” 是踩在了巨人的肩膀上，我们利用了Github上开源的CCF插件二次制作而成，在此非常感谢作者的无私奉献。如果您需要该版本，请转到以下位置进行浏览和下载：[show-rank](https://github.com/hnshhslsh/show-rank), [CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)
 
-**“显示论文会议/期刊等级”** 是一个浏览器扩展，它可以在各大论文网站上显示会议、期刊等级，具体的信息请您查看下方表格。
+**easyScholar** 是一个浏览器扩展，它可以在各大论文网站上显示会议、期刊等级，具体的信息请您查看下方表格。
 
 #### 高校：
 
