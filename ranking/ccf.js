@@ -20,6 +20,7 @@ ccf.getRankingInfo = function(names) {
 				rankingInfo.info += name.abbr + ":" + "\n";
 				for (let index of possible) {
 					const fullname = ccf.rank[index][0];
+					console.log(fullname);
 					const rank = ccf.rank[index][1];
 					rankingInfo.info += fullname + ": CCF " + rank + "\n";
 					ranking = rank + '?';

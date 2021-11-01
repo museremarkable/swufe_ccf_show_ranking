@@ -508,6 +508,7 @@ ccf.rank = [
 	["AAAI Conference on Artificial Intelligence", "A"],
 	["Annual Conference on Neural Information Processing Systems", "A"],
 	["Annual Meeting of the Association for Computational Linguistics", "A"],
+	["Meeting of the Association for Computational Linguistics", "A"],
 	["IEEE Conference on Computer Vision and Pattern Recognition", "A"],
 	["International Conference on Computer Vision", "A"],
 	["International Conference on Machine Learning", "A"],

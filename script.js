@@ -49,9 +49,42 @@ function start(){
 		acm.rankingSpanProvider.push(ccf.getRankingSpan);
 		acm.start();
 	} else if (location.hostname.startsWith("dblp")) {
-		ccf.custom2rank = dblp.uri2rank
-		dblp.rankingSpanProvider.push(ccf.getRankingSpan);
-		dblp.start();
+		if (optionCheckd.includes("ccf")){
+			dblp2.rankSpanListSwufe.push(swufe.CCFgetRankingSpanEn);
+		}
+		
+		if(optionCheckd.includes("cufe")){
+			dblp2.rankSpanListSwufe.push(cufe.getRankingSpanEn);
+		}
+		if(optionCheckd.includes("ruc")){
+			dblp2.rankSpanListSwufe.push(ruc.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sci")){
+			dblp2.rankSpanListSwufe.push(sci.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sci-base")){
+			dblp2.rankSpanListSwufe.push(sciZhongBase.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sci-up")){
+			dblp2.rankSpanListSwufe.push(sciZhongUp.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("uibe")){
+			dblp2.rankSpanListSwufe.push(uibe.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("sciif")){
+			dblp2.rankSpanListSwufe.push(sciif.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("cscd")){
+			dblp2.rankSpanListSwufe.push(cscd.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("swjtu")){
+			dblp2.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
+		}
+		if (optionCheckd.includes("swufe")){
+			dblp2.rankSpanListSwufe.push(swufe.getRankingSpanEn);
+		}
+		dblp2.start();
+
 	} else if (location.href.startsWith("https://link.springer.com/search")) {
 		if (optionCheckd.includes("ccf")){
 			springer.rankingSpanProvider.push(ccf.getRankingSpan);

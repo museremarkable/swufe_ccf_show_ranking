@@ -1,7 +1,7 @@
 {
 	"name": "__MSG_appName__",
 	"manifest_version": 2,
-	"version": "3.8.1",
+	"version": "4.0",
 	"description": "__MSG_appDesc__",
 	"default_locale": "zh_CN",
 	"icons": {
@@ -148,7 +148,6 @@
                 "site/acm.js",
                 "site/ei.js",
                 "site/ieee.js",
-                "site/dblp.js",
                 "site/springer.js",
                 "site/scholar.js",
                 "site/zhiwang.js",
@@ -159,6 +158,7 @@
 				"site/aminer.js",
 				"site/pubmed.js",
 				"site/bing.js",
+				"site/dblp2.js",
 				
                 "data/ccf-index.js",
                 "data/ccf-rank.js",

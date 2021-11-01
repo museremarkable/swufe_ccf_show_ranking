@@ -10,9 +10,9 @@ function save_options() {
 		options: array
 	}, function() {
 		setTimeout(function() {
-			document.getElementById("save").innerHTML="<span>S</span><span>a</span><span>v</span><span>e</span>";
-		}, 1000);
-		document.getElementById("save").innerHTML="<span>S</span><span>u</span><span>c</span><span>c</span><span>e</span><span>s</span><span>s</span>";
+			document.getElementById("save").innerHTML="Save";
+		}, 1500);
+		document.getElementById("save").innerHTML="Success!";
 		// $(".button > span").css("color","#958D50");
 	});
 }

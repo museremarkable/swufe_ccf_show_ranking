@@ -7,7 +7,7 @@
 
 > “显示论文会议/期刊等级” 是踩在了巨人的肩膀上，我们利用了Github上开源的CCF插件二次制作而成，在此非常感谢作者的无私奉献。如果您需要该版本，请转到以下位置进行浏览和下载：[show-rank](https://github.com/hnshhslsh/show-rank), [CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)
 
-**easyScholar** 是一个浏览器扩展，它可以在各大论文网站上显示会议、期刊等级，具体的信息请您查看下方表格。
+**easyScholar** 是一款浏览器扩展，它可以在各大论文网站上显示会议、期刊等级，具体的信息请您查看下方表格。
 
 #### 高校：
 
@@ -19,7 +19,7 @@
 | **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
 |       **[Springer](https://link.springer.com/)**        |      **✔**       |         |          |  **✔**   |         |  **✔**  |   **✔**   |  **✔**   |
 |     **[IEEExplore](https://ieeexplore.ieee.org/)**      |      **✔**       |         |          |  **✔**   |         |  **✔**  |   **✔**   |  **✔**   |
-|         **[DBLP](https://dblp.uni-trier.de/)**          |                  |         |          |          |         |         |           |          |
+|         **[DBLP](https://dblp.uni-trier.de/)**          |        ✔         |         |          |    ✔     |         |    ✔    |     ✔     |    ✔     |
 |  **[web of science](http://apps.webofknowledge.com/)**  |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
 |        **[百度学术](https://xueshu.baidu.com/)**        |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
 |          **[必应学术](https://cn.bing.com/)**           |      **✔**       |  **✔**  |  **✔**   |  **✔**   |  **✔**  |  **✔**  |   **✔**   |  **✔**   |
@@ -36,7 +36,7 @@
 | **[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN)** |    **✔**     |    **✔**     |    ✔    |       **✔**        |     ✔     |         ✔          |
 |       [**Springer**](https://link.springer.com/)        |    **✔**     |    **✔**     |    ✔    |       **✔**        |           |         ✔          |
 |     **[IEEExplore](https://ieeexplore.ieee.org/)**      |    **✔**     |    **✔**     |    ✔    |       **✔**        |           |         ✔          |
-|         **[DBLP](https://dblp.uni-trier.de/)**          |              |              |         |       **✔**        |           |                    |
+|         **[DBLP](https://dblp.uni-trier.de/)**          |      ✔       |      ✔       |    ✔    |       **✔**        |           |         ✔          |
 |  **[web of science](http://apps.webofknowledge.com/)**  |    **✔**     |    **✔**     |    ✔    |       **✔**        |     ✔     |         ✔          |
 |        **[百度学术](https://xueshu.baidu.com/)**        |    **✔**     |    **✔**     |    ✔    |       **✔**        |     ✔     |         ✔          |
 |          **[必应学术](https://cn.bing.com/)**           |    **✔**     |    **✔**     |    ✔    |       **✔**        |     ✔     |         ✔          |
@@ -61,6 +61,7 @@
 2. **点击浏览器右上角插件图标，即可进入插件设置页面。**
 3. **在此您可以根据自己的需求，选择需要展示的单位信息，保存后，重新刷新即可。**.
 4. **本插件不会收集用户任何信息，完全开源，永久免费，请您放心使用。**
+5. **科研云盘的使用请前往[easyScholar科研云盘简介](https://blog.csdn.net/weixin_49328057/article/details/121071558)查看。**
 
 ### 项目展示
 
@@ -145,7 +146,7 @@
 
 - **在  [DBLP](https://dblp.uni-trier.de/)展示**：
 
-  在此不做演示，请前往[CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)仓库查看，在此再次感谢原作者的无私奉献。
+  ![](picture/dblp.png)
 
 ### 注意事项
 
@@ -203,7 +204,8 @@
 | 2021.10.14 |          优化了一些细节，增加了Aminer显示中、英等级          |   Nixiak-nan   |
 | 2021.10.20 | 更新了SCI分区为2020年科睿唯安最新，<br/>增加了SCI中科院分区top1（3.7） |   Nixiak-nan   |
 | 2021.10.24 |        支持pubmed，必应学术，改名为easyScholar（3.8）        |   Nixiak-nan   |
-| 2021.10.26 |               修复了Aminer、WOS上重复显示的BUG               |   Nixiak-nan   |
+| 2021.10.26 |          修复了Aminer、WOS上重复显示的BUG（3.8.1）           |   Nixiak-nan   |
+| 2021.11.1  |  在dblp上支持各种单位的英文等级，增加了科研云盘功能（4.0）   |   Nixiak-nan   |
 
 
 
