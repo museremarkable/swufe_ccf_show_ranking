@@ -159,6 +159,7 @@
 				"site/pubmed.js",
 				"site/bing.js",
 				"site/dblp2.js",
+				"site/dblp.js",
 				
                 "data/ccf-index.js",
                 "data/ccf-rank.js",
