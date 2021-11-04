@@ -143,6 +143,7 @@
 				"ranking/cscd.js",
 				"ranking/uibe.js",
 				"ranking/swjtu.js",
+				"ranking/pku.js",
 				
                 "site/siteUtil.js",
                 "site/acm.js",
@@ -180,6 +181,7 @@
 				"data/uibeRankingName.js",
 				"data/swjtuRankingName.js",
 				"data/abbName.js",
+				"data/pkuRankingName.js",
                 "script.js",
 				
 				"popup/js/jquery-1.8.3.min.js",

@@ -174,6 +174,9 @@ function start(){
 			scholar.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
 			scholar.rankSpanListSwufe.push(swjtu.getRankingSpan);
 		}
+		if (optionCheckd.includes("pku")){
+			scholar.rankSpanListSwufe.push(pku.getRankingSpan);
+		}
 		if (optionCheckd.includes("swufe")){
 			scholar.rankSpanListSwufe.push(swufe.getRankingSpanEn);
 			scholar.rankSpanListSwufe.push(swufe.getRankingSpan);
@@ -205,6 +208,9 @@ function start(){
 		}
 		if(optionCheckd.includes("swjtu")){
 			zhiwang.rankingSpanProvider.push(swjtu.getRankingSpan);
+		}
+		if(optionCheckd.includes("pku")){
+			zhiwang.rankingSpanProvider.push(pku.getRankingSpan);
 		}
 		if(optionCheckd.includes("swufe")){
 			zhiwang.rankingSpanProvider.push(swufe.getRankingSpan);
@@ -256,6 +262,9 @@ function start(){
 		if (optionCheckd.includes("swjtu")){
 			microsoft.rankingSpanProvider.push(swjtu.getRankingSpanEn);
 			microsoft.rankingSpanProvider.push(swjtu.getRankingSpan);
+		}
+		if (optionCheckd.includes("pku")){
+			microsoft.rankingSpanProvider.push(pku.getRankingSpan);
 		}
 		if (optionCheckd.includes("swufe")){
 			microsoft.rankingSpanProvider.push(swufe.getRankingSpanEn);
@@ -315,6 +324,9 @@ function start(){
 				webofscience.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
 				webofscience.rankSpanListSwufe.push(swjtu.getRankingSpan);
 			}
+			if (optionCheckd.includes("pku")){
+				webofscience.rankSpanListSwufe.push(pku.getRankingSpan);
+			}
 			if (optionCheckd.includes("swufe")){
 				webofscience.rankSpanListSwufe.push(swufe.getRankingSpanEn);
 				webofscience.rankSpanListSwufe.push(swufe.getRankingSpan);
@@ -373,6 +385,9 @@ function start(){
 			newwebofscience.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
 			newwebofscience.rankSpanListSwufe.push(swjtu.getRankingSpan);
 		}
+		if (optionCheckd.includes("pku")){
+			newwebofscience.rankSpanListSwufe.push(pku.getRankingSpan);
+		}
 		if (optionCheckd.includes("swufe")){
 			newwebofscience.rankSpanListSwufe.push(swufe.getRankingSpanEn);
 			newwebofscience.rankSpanListSwufe.push(swufe.getRankingSpan);
@@ -426,6 +441,9 @@ function start(){
 			baiduxueshu.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
 			baiduxueshu.rankSpanListSwufe.push(swjtu.getRankingSpan);
 		}
+		if (optionCheckd.includes("pku")){
+			baiduxueshu.rankSpanListSwufe.push(pku.getRankingSpan);
+		}
 		if (optionCheckd.includes("swufe")){
 			baiduxueshu.rankSpanListSwufe.push(swufe.getRankingSpanEn);
 			baiduxueshu.rankSpanListSwufe.push(swufe.getRankingSpan);
@@ -478,6 +496,9 @@ function start(){
 		if (optionCheckd.includes("swjtu")){
 			aminer.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
 			aminer.rankSpanListSwufe.push(swjtu.getRankingSpan);
+		}
+		if (optionCheckd.includes("pku")){
+			aminer.rankSpanListSwufe.push(pku.getRankingSpan);
 		}
 		if (optionCheckd.includes("swufe")){
 			aminer.rankSpanListSwufe.push(swufe.getRankingSpanEn);
@@ -567,6 +588,9 @@ function start(){
 		if (optionCheckd.includes("swjtu")){
 			bing.rankSpanListSwufe.push(swjtu.getRankingSpanEn);
 			bing.rankSpanListSwufe.push(swjtu.getRankingSpan);
+		}
+		if (optionCheckd.includes("pku")){
+			bing.rankSpanListSwufe.push(pku.getRankingSpan);
 		}
 		if (optionCheckd.includes("swufe")){
 			bing.rankSpanListSwufe.push(swufe.getRankingSpanEn);
