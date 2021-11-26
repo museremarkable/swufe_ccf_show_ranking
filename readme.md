@@ -185,7 +185,7 @@
 
   ---
 
-  ![](picture\translate1.png)
+  ![](picture/translate1.png)
 
   
 
