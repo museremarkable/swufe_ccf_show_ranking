@@ -183,7 +183,11 @@
 
   ![](picture/translate2.png)
 
+  ---
+
   ![](picture\translate1.png)
+
+  
 
 - 您可以在此设置翻译源、按键、颜色
 
