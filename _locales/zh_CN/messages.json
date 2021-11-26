@@ -4,7 +4,7 @@
       "description": "The title of the application, displayed in the web store."
     },
     "appDesc": {
-      "message": "支持在各大论文搜索网站上，显示各种期刊排名。",
+      "message": "显示各种文献排名，并且提供翻译功能，助力科研",
       "description":"The description of the application, displayed in the web store."
     }
   }

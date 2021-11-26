@@ -1,0 +1,197 @@
+.ccf-ranking {
+    /* padding: 1px 9px 2px; */
+    padding: 3px 9px 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 9px;
+    font-size: 11.844px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    white-space: nowrap;
+}
+
+
+.ccf-a {
+    background-color: #b94a48;
+}
+
+.ccf-b {
+    background-color: #f89406;
+}
+
+.ccf-c {
+    background-color: #468847;
+}
+
+.xdu-1 {
+    background-color: #ff55ff;
+}
+.xdu-2 {
+    background-color: #b94a48;
+}
+
+.swufe-AA {
+    background-color: #ff55ff;
+}
+.swufe-A {
+    background-color: #b94a48;
+}
+.swufe-B {
+    background-color: #f89406;
+}
+.swufe-C {
+    background-color: #468847;
+}
+
+.ruc-AA {
+    background-color: #ff55ff;
+}
+.ruc-A {
+    background-color: #b94a48;
+}
+.ruc-A- {
+    background-color: #f89406;
+}
+.ruc-B {
+    background-color: #468847;
+}
+
+.swjtu-AAA {
+    background-color: #ff55ff;
+}
+.swjtu-AA {
+    background-color: #b94a48;
+}
+.swjtu-A {
+    background-color: #f89406;
+}
+.swjtu-BB {
+	background-color: #468847;
+}
+.swjtu-B {
+   background-color: #55aa7f;
+}
+.swjtu-C {
+    background-color: #55aaff;
+}
+
+.cufe-AAA {
+    background-color: #b94a48;
+}
+.cufe-AA {
+    background-color: #f89406;
+}
+.cufe-A {
+    background-color: #468847;
+}
+
+.fdu-A {
+    background-color: #b94a48;
+}
+.fdu-B {
+    background-color: #f89406;
+}
+
+.sjtu-A {
+    background-color: #b94a48;
+}
+.sjtu-B {
+    background-color: #f89406;
+}
+
+.cscd-kuo {
+    background-color: #b94a48;
+}
+.cscd-he {
+    background-color: #ff55ff;
+}
+
+.uibe-A {
+    background-color: #ff55ff;
+}
+.uibe-A- {
+    background-color: #b94a48;
+}
+.uibe-B {
+	background-color: #f89406;
+}
+
+
+.xmu-1 {
+    background-color: #b94a48;
+}
+
+.sci-1 {
+    background-color: #ff55ff;
+}
+
+.sci-Q1 {
+    background-color: #ff55ff;
+}
+.sci-Q2 {
+    background-color: #b94a48;
+}
+.sci-Q3 {
+    background-color: #f89406;
+}
+.sci-Q4 {
+    background-color: #468847;
+}
+
+.cssci-cssci {
+    background-color: #ff55ff;
+}
+
+.pku-1 {
+    background-color: #ff55ff;
+}
+
+.sciif-10 {
+    background-color: #ff55ff;
+}
+.sciif-4 {
+    background-color: #b94a48;
+}
+.sciif-2 {
+    background-color: #f89406;
+}
+.sciif-1 {
+    background-color: #468847;
+}
+.sciif-0 {
+    background-color: #5555ff;
+}
+
+.ccf-verify {
+    background-color: #3a87ad;
+}
+
+.ccf-none {
+    background-color: grey;
+}
+
+
+.ccf-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.ccf-tooltip .ccf-tooltiptext {
+    visibility: hidden;
+    background-color: #3a87ad;
+    border-radius: 6px;
+    padding: 5px 5px;
+    font-family: sans-serif;
+    
+    position: absolute;
+    z-index: 980624;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.ccf-tooltip:hover .ccf-tooltiptext {
+    visibility: visible;
+}
+

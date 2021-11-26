@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>easyScholar</title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+		<link rel="stylesheet" type="text/css" href="/lib/css/page.css" />
+
+		<link rel="stylesheet" type="text/css" href="/lib/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/background/css/common.css" />
+	</head>
+	<body>
+		<div class="page" id="app">
+			<div class="nav-left">
+				<div class="LogoName">
+					easyScholar
+				</div>
+				<div class="navDiv">
+					<div class="navName">导航</div>
+					<div class="nav-list">
+						<ul>
+							<li class="nav-tab ">
+								<a href="home.html" class="li-a ">主页</a>
+							</li>
+							<li class="nav-tab ">
+								<a href="paper.html" class="li-a ">文献管理</a>
+							</li>
+							<li class="nav-tab ">
+								<a href="equation.html" class="li-a">公式识别</a>
+							</li>
+							<li class="nav-tab a_active ">
+								<a href="translation.html" class="li-a active">在线翻译</a>
+							</li>
+							<li class="nav-tab ">
+								<a href="author.html" class="li-a">关于作者</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="nav-right">
+				<div class="nav-top">
+					<h3>欢迎使用easyScholar！！</h3>
+				</div>
+
+
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">设置默认翻译源  <button  class="glyphicon glyphicon-question-sign"
+								data-toggle="tooltip" data-placement="top" title="推荐谷歌翻译 "></button>
+						</h3>
+
+					</div>
+					<div class="panel-body">
+						<div class="RadioStyle">
+							<div class="Block PaddingL">
+								<input type="radio"  name="translateWhere" checked="checked" value="google" id="googletranslate" />
+								<label for="googletranslate">谷歌翻译</label>
+								<input type="radio" name="translateWhere" value="baidu" id="baidutranslate" />
+								<label for="baidutranslate">百度翻译</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">设置默认翻译键  <button  class="glyphicon glyphicon-question-sign"
+								data-toggle="tooltip" data-placement="top" title="仅支持26个英文字母，默认为按键  t "></button></h3>
+					</div>
+					<div class="col-md-2">
+						<div class="panel-body">
+							<div class="input-group input-group-sm">
+								<input name="translateKeycode" type="text" value="t" class="form-control" >
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">设置翻译结果颜色  <button  class="glyphicon glyphicon-question-sign"
+								data-toggle="tooltip" data-placement="top" title="仅支持16进制颜色码，默认为 #55aaff "></button></h3>
+					</div>
+					<div class="col-md-2">
+						<div class="panel-body">
+							<div class="input-group input-group-sm">
+								<input name="translateColor" type="text" value="#55aaff" class="form-control" >
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1">
+				<button id="saveTranslateSetting" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+				  保存该页面所有设置
+				</button>
+				</div>
+			</div>
+			<div id="clickCanvas" style=" position:fixed;left:0;top:0;z-index:999999999;pointer-events:none;"></div>
+		</div>
+
+	</body>
+	<script src="/lib/js/jquery.min.js"></script>
+	<script src="/background/background.js"></script>
+	<script src="/lib/js/bootstrap.min.js"></script>
+	<script src="/popup/js/beautiful_ball.js"></script>
+
+</html>

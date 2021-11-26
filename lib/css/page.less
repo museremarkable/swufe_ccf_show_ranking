@@ -1,0 +1,120 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.page{
+	.nav-left{
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 240px;
+		background-color: #FFFFFF;
+		box-shadow: 10px 0px 17px rgba(72, 72, 72, 0.1);
+		.LogoName{
+			text-align: center;
+			line-height: 70px;
+			font-size: 20px;
+			font-weight: 700;
+			color: #6d61ea;
+			letter-spacing: .05em;
+		}
+		.navDiv{
+			.navName{
+				padding: 12px 20px !important;
+				letter-spacing: .05em;
+				font-size: 11px;
+				color: #5a5454;
+				font-weight: 700;
+			}
+			.nav-list{
+				ul{
+					.a_active{
+						background-color: #e2e0fb;
+						.active{
+							color: #6d61ea !important;
+							font-weight: 700;
+						}
+					}
+					.nav-tab{
+						list-style: none;
+						.li-a{
+							padding: 12px 15px 12px 25px !important;
+							text-decoration: none;	
+							display: block;
+							padding: .65rem 1.5rem; 
+							font-size: 14px;
+							color: #5a5454;
+							.bx{
+								font-size: 17px;
+								vertical-align: text-top;
+								margin-right: 6px;
+							}
+						}
+						.nav-box{
+							// display: none;
+							height: 0;
+							overflow: hidden;
+						}
+					}
+					.nav-show{
+						.nav-box{
+							// display: none;
+							height: auto !important;
+							padding-bottom: 12px;
+							// height: 100px !important;
+							transition: all .6s;
+							a{
+								padding: 5px 70px !important;
+								text-decoration: none;	
+								display: block;
+								padding: .65rem 1.5rem; 
+								font-size: 13px;
+								color: #5a5454;
+								transition: all .3s;
+								margin-left: 0px;
+							}
+							.active-li-a{
+								color: #6d61ea !important;
+								font-weight: 700;
+							}
+							a:hover{
+								margin-left: 6px;
+							}
+						}
+					}
+				}
+				.li-a{
+					transition: all .8s;
+					margin-left: 0px;
+				}
+				.li-a:hover{
+					margin-left: 6px;
+				}
+			}
+		}
+	}
+	.nav-right{
+		display: flex;
+		flex-direction: column;
+		padding-left: 240px;
+	}
+	.nav-top{
+		flex: 1;
+		// position: absolute;
+		height: 60px;
+		width: 100%;
+		padding: 20px;
+		background-color: #FFFFFF;
+		box-shadow: 10px 0px 17px rgba(72, 72, 72, 0.2);
+	}
+	.content-page{
+		flex: 1;
+		position: absolute;
+		top: 60px;
+		left: 240px;
+		right: 0;
+		bottom: 0;
+		// height: 100%;
+	}
+}
