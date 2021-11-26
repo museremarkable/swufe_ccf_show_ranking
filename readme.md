@@ -21,7 +21,7 @@
 ## 安装
 
 1. Microsoft Edge应用商店下载 **（推荐）**：点击[easyScholar](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)，点击安装即可。
-2. 谷歌应用商店下载**（需要梯子）** ：点击[easyScholar](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
+2. 谷歌应用商店下载 **（需要梯子）**  ：点击[easyScholar](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
 3. 离线安装方法（此为谷歌浏览器教程，其他浏览器步骤基本相似）：
    - 从[GitHub](https://github.com/Nixiak-nan/easyScholar)**下载**源代码
    - 解压至**某个文件夹**中。（可删除picture、数据份文件文件夹，readme.md）
