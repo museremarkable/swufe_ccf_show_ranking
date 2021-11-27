@@ -90,20 +90,18 @@
 				"show_ranking/data/xduRankingName.js",
 				
                 "show_ranking/script.js",
-                // "paper_manager/script.js",
+
 				
 				"popup/js/jquery-1.8.3.min.js",
 				"popup/js/jquery-labelauty.js",
 				
 				"translation/translation.js"
-				// "paper_manager/paper.js",
-				// "paper_manager/dialog.js"			// 弹窗
+
 				
             ],
             "css": [
                 "show_ranking/style.css"
-				// "lib/css/global.css",	// 弹窗
-				// "lib/css/dialog.css"	// 弹窗
+
             ]
         }
     ]

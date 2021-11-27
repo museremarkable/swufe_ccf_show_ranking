@@ -237,15 +237,15 @@
 
 #### 6.我能把自己学校的数据集发送给你吗？
 
-当然可以的，不过为了更多用户的使用方便，希望数据集是能有代表性的。邮箱地址：zhangxiangnan@outlook.com。
+当然可以的，不过为了更多用户的使用方便，希望数据集是能有代表性的。邮箱地址：zhangxiangnan0906@outlook.com。
 
 #### 7.该插件没有支持我常看的论文网站，可以增加吗？
 
-当然可以的，你可以把网址发送到我的邮箱：zhangxiangnan@outlook.com。
+当然可以的，你可以把网址发送到我的邮箱：zhangxiangnan0906@outlook.com。
 
 #### 8.我有很多建议或意见，该如何联系你？
 
-推荐在github、CSDN上留言，因为别的用户也可以浏览到该问题。也可以通过邮箱联系我：zhangxiangnan@outlook.com。
+推荐在github、CSDN上留言，因为别的用户也可以浏览到该问题。也可以通过邮箱联系我：zhangxiangnan0906@outlook.com。
 
 #### 9.为什么有的网站突然不显示了？
 
