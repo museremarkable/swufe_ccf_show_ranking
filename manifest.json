@@ -85,14 +85,17 @@
 				"show_ranking/data/cscdRankingName.js",
 				"show_ranking/data/uibeRankingName.js",
 				"show_ranking/data/swjtuRankingName.js",
-				"show_ranking/data/abbName.js",
+				"show_ranking/data/abbName1.js",
+				"show_ranking/data/abbName2.js",
+				"show_ranking/data/abbName3.js",
+				"show_ranking/data/abbName4.js",
 				"show_ranking/data/pkuRankingName.js",
 				"show_ranking/data/xduRankingName.js",
 				
                 "show_ranking/script.js",
 
 				
-				"popup/js/jquery-1.8.3.min.js",
+				"popup/js/jquery-3.3.1.min.js",
 				"popup/js/jquery-labelauty.js",
 				
 				"translation/translation.js"

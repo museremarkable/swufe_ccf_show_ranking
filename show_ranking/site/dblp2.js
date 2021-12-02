@@ -22,7 +22,10 @@ dblp2.addRankings = function() {
 				fullName = abb.BritishColumbiaNameEn[abbName];
 			}
 			if (fullName == undefined){
-				fullName = abb.WOS[abbName];
+				fullName = abb.WOS1[abbName];
+			}
+			if (fullName == undefined){
+				fullName = abb.WOS2[abbName];
 			}
 			if(fullName == undefined){
 				fullName = "#$%^";

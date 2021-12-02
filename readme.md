@@ -22,6 +22,7 @@
 
 1. Microsoft Edge应用商店下载 **（推荐）**：点击[easyScholar](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)，点击安装即可。
 2. 谷歌应用商店下载 **（需要梯子）**  ：点击[easyScholar](https://chrome.google.com/webstore/detail/swufe-cff-show-conference/njgedjcccpcfmjecccaajkjiphpddfji)，点击安装即可。
+2. 火狐应用商店下载：点击[easyScholar](https://addons.mozilla.org/zh-CN/firefox/addon/swufe_ccf_show_rank/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)，点击安装即可。
 3. 离线安装方法（此为谷歌浏览器教程，其他浏览器步骤基本相似）：
    - 从[GitHub](https://github.com/Nixiak-nan/easyScholar)**下载**源代码
    - 解压至**某个文件夹**中。（可删除picture、数据份文件文件夹，readme.md）
@@ -175,11 +176,11 @@
 1. 本功能在**所有网站**均可以使用。
 2. 鼠标选中文字后，按下  **t** 键，既可以看到翻译结果。
 3. 点击浏览器右上角插件图标，点击在线翻译按钮，即可进入翻译设置界面。
-4. 在此您可以根据自己的需求，设置翻译源、按键、翻译字体颜色。
+4. 在此您可以根据自己的需求，设置翻译源、按键、翻译字体颜色等。
 
 #### 项目展示
 
-- 选中文字后，按下 t 即可查看翻译结果
+- 选中文字后，默认按下 t 即可查看翻译结果。默认按下 y  可以逐个隐藏翻译结果。
 
   ![](picture/translate2.png)
 
@@ -189,7 +190,11 @@
 
   
 
-- 您可以在此设置翻译源、按键、颜色
+- 您可以选择翻译结果产生的位置，以及更换默认颜色。
+
+  ![](picture/translate3.png)
+  
+- 在此设置翻译源、按键、颜色等。
 
   ![](picture/translate_setting1.png)
 
@@ -227,9 +232,9 @@
 3. 一些期刊、会议的名称并不统一，这会导致论文网站提供的来源名称，与数据集中的名称不能完全匹配上，就无法显示，具体例子请请查看[部分CCF会议无法显示排名 #7](https://github.com/Nixiak-nan/easyScholar/issues/7)，[IEEE部分期刊CCF评级不显示 #9](https://github.com/Nixiak-nan/easyScholar/issues/9)
 4. 在此也强烈建议选择多个排名数据集，因为多个弱分类器，可以构成强分类器。
 
-#### 4.是否有火狐、Safari版本？
+#### 4.是否有Safari版本？
 
-目前火狐商店有一款名为**“SWUFE、CFF：显示会议/期刊等级（V2.5）”**的插件，这是早期easyScholar的雏形。但随着插件内容的增加，由于浏览器内核不同，Chrome插件不能完全适应火狐，所以只能很可惜的停止火狐商店更新。Safari同理。
+由于浏览器内核不同，Chrome插件不能完全适应Safari，所以目前没有Safari版本。mac用户如果要使用，请使用离线安装方式。
 
 #### 5.为什么在谷歌学术上这么卡？
 
@@ -251,21 +256,33 @@
 
 可能是因为网站有更新，导致网址结构变化，使得插件不能正常工作。若出现此类情况，请您及时联系我。
 
+#### 10.能否在平板、手机上使用？
+
+该插件的开发、调试工作仅在电脑端的浏览器上进行。如果平板、手机能安装支持chrome插件的浏览器，就可以使用，否则不能。据我所知，ipad上没有该类浏览器。而安卓平板上，有这一类的浏览器。
+
+#### 11.为什么中科院SCI分区只有 1区 ？
+
+目前查询中科院SCI分区的渠道，只有去小程序或者官方网站上搜索查询，官方并未公布完整的中科院SCI分区数据。平常看到的各种excel、pdf版本，都是民间收集整理而来，并且还都不全。如果有看到所谓完整版本的，要么是Clarivate分区，要么就仅仅是某几个大类下的。如果有用户确实拥有完整版的分区表，可以发邮箱给我，我将尽快支持。
+
 ### 在线翻译
 
 #### 1.为什么谷歌翻译突然不能用了？
 
 谷歌的数据源来自谷歌免费接口，好处是免费。坏处是谷歌怕别人薅羊毛，如果一个IP地址长时间（3个小时左右，也可能更短或更长。我没试过）的访问该接口，就会临时禁止（可能半个小时？或一天？我也没试过）。
 
-#### 2.为什么百度翻译突然不能用了？
+#### 2.为什么百度（腾讯）翻译突然不能用了？
 
-百度的数据源来自[百度翻译开放平台](https://api.fanyi.baidu.com/)，好处是不会限制IP，坏处是需要开发者购买翻译文本数量，若后期费用超出开发者承受能力，将会关闭此接口。所以大家优先使用谷歌翻译接口。
+百度的数据源来自[百度翻译开放平台](https://api.fanyi.baidu.com/)，，腾讯的数据源来自[腾讯云翻译](https://cloud.tencent.com/document/product/551/15619)，好处是不会限制IP，坏处是需要开发者购买翻译文本数量，若后期费用超出开发者承受能力，将会关闭此接口。所以大家优先使用谷歌翻译接口。
 
-#### 3.我觉得百度、谷歌都不好用，可以增加其他数据源，例如有道之类的吗？
+#### 3.你这么一说，我都不敢用其他翻译源了，担心作者没钱跑路。
+
+还好。百度和腾讯每个月均有一定的免费翻译数量，就目前easyScholar的用户量来说，应该绰绰有余。
+
+#### 4.我觉得百度、谷歌、谷歌都不好用，可以增加其他数据源，例如有道之类的吗？
 
 也许可以吧。但前提是能找到免费的数据接口。
 
-#### 4.edge浏览器上按下键盘后，翻译没有反应？
+#### 5.edge浏览器上按下键盘后，翻译没有反应？
 
 有三种解决办法。
 
@@ -324,7 +341,7 @@
 | 2021.7.10  |      增加对**新版**web of science显示swufe等级（V2.5）       |   Nixiak-nan   |
 |  2021.8.2  | 修改了谷歌学术显示CCF的方式，详情[点此查看](https://github.com/Nixiak-nan/easyScholar/issues/7) |   Nixiak-nan   |
 |  2021.8.3  |   增加了百度学术、web of science、微软学术显示CCF（V2.6）    |   Nixiak-nan   |
-|  2021.8.4  | 成功在[Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/swufe%E3%80%81cff%EF%BC%9A%E6%98%BE%E7%A4%BA%E4%BC%9A%E8%AE%AE%E6%9C%9F%E5%88%8A%E7%AD%89%E7%BA%A7/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)商店上架 |   Nixiak-nan   |
+|  2021.8.4  | 成功在[Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/easyscholar/bpepicgagmdchlkjjeeiekpoafehpagm?hl=zh-CN)商店上架 |   Nixiak-nan   |
 | 2021.8.25  | 修复了SWUFE推荐期刊的名字中，<br/>存在 **&、and或  - :** 所导致的无法识别的BUG |   Nixiak-nan   |
 | 2021.8.25  | 在谷歌学术中，将发起请求的时间，<br/>调整为1-2秒间的一个随机数，尽可能的躲过谷歌反爬机制（V2.7） |   Nixiak-nan   |
 | 2021.8.31  | 新增加央财，复旦，上交大，SCI，SCIIF数据，<br/>并支持选择数据集（V3.0） |   Nixiak-nan   |

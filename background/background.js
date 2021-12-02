@@ -1,6 +1,8 @@
 let default_translateWhere = "google";
 let default_translateKeycode = "84";
+let default_translateHideKeycode = "89";
 let default_translateColor = "#55aaff";
+let default_translatePosition = "after";
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip();  // 生成工具提示
@@ -10,22 +12,33 @@ $(function () {
 $(function(){
 	let translateWhere ;
 	let translateKeycode ;
+	let translateHideKeycode ;
 	let translateColor ;
+	let translatePosition ;
 	
-	chrome.storage.sync.get({"translateWhere": default_translateWhere, "translateKeycode": default_translateKeycode, "translateColor": default_translateColor}, function(items) {
+	chrome.storage.sync.get({"translateWhere": default_translateWhere, "translateKeycode": default_translateKeycode, 
+	"translateColor": default_translateColor, "translatePosition": default_translatePosition, "translateHideKeycode": default_translateHideKeycode}, function(items) {
 		translateWhere = items.translateWhere;
 		translateKeycode = items.translateKeycode;
 		translateColor = items.translateColor;
+		translatePosition = items.translatePosition;
+		translateHideKeycode = items.translateHideKeycode;
 		
 		// 回显
 		$("input[name=translateKeycode]").val(String.fromCharCode(translateKeycode) );
+		$("input[name=translateHideKeycode]").val(String.fromCharCode(translateHideKeycode) );
 		$("input[name=translateColor]").val(translateColor) ;
 		if(translateWhere == "google"){
 			$("#googletranslate").prop("checked",true);
-			$("#baidutranslate").prop("checked",false);
 		}else if (translateWhere == "baidu"){
-			$("#googletranslate").prop("checked",false);
 			$("#baidutranslate").prop("checked",true);
+		}else if(translateWhere == "tengxun"){
+			$("#tengxuntranslate").prop("checked",true);
+		}
+		if(translatePosition == "after"){
+			$("#translateResultPositionAfter").prop("checked", true);
+		}else{
+			$("#translateResultPositionBefore").prop("checked", true);
 		}
 	});
 	
@@ -33,9 +46,12 @@ $(function(){
 
 $("#saveTranslateSetting").click(function(){
 	let translateWhere = $("input[name=translateWhere]:checked").val();
+	let translatePosition = $("input[name=translatePosition]:checked").val();
 	let translateKeycodeChar = $("input[name=translateKeycode]").val().toUpperCase();
+	let translateHideKeycodeChar = $("input[name=translateHideKeycode]").val().toUpperCase();
 	let keyCodeList = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 	let translateKeycode = "84";
+	
 	if(translateKeycodeChar.length != 1){
 		translateKeycodeChar = "T";
 	}
@@ -44,6 +60,17 @@ $("#saveTranslateSetting").click(function(){
 			translateKeycode = 65+i + "";
 		}
 	}
+	
+	if(translateHideKeycodeChar.length != 1){
+		translateHideKeycodeChar = "Y";
+	}
+	for(let i = 0; i < keyCodeList.length; i++){
+		if(translateHideKeycodeChar == keyCodeList[i]){
+			translateHideKeycode = 65+i + "";
+		}
+	}
+	
+	
 	let translateColor = $("input[name=translateColor]").val();
 	if(translateColor.indexOf("#") == -1 || translateColor.length != 7){
 		translateColor = "#55aaff";
@@ -51,7 +78,9 @@ $("#saveTranslateSetting").click(function(){
 	chrome.storage.sync.set({
 			"translateWhere": translateWhere,
 			"translateKeycode":translateKeycode,
-			"translateColor":translateColor
+			"translateHideKeycode":translateHideKeycode,
+			"translateColor":translateColor,
+			"translatePosition":translatePosition
 		}, function() {
 			setTimeout(function() {
 				document.getElementById("saveTranslateSetting").innerHTML="保存该页面所有设置";
@@ -61,14 +90,20 @@ $("#saveTranslateSetting").click(function(){
 });
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse){
-	if(request.action == "trans_baidu"){
-
+	if(request.action == "trans_baidu" || request.action == "trans_tengxun"){
+		let url2 ;
+		if(request.action == "trans_baidu"){
+			url2 = 'http://47.115.128.78:7060/baidutranslate';
+		}else if(request.action == "trans_tengxun"){
+			url2 = 'http://47.115.128.78:7060/tengxuntranslate';
+		}
+		
 		let row_data = request.data;
 		if(row_data.length > 1500){
 			return "当前选择的字符数为" + row_data.length + "，已经超过1500，请缩小范围选择。";
 		}
 		$.ajax({
-		    url: 'http://47.115.128.78:7060/baidutranslate',
+		    url: url2,
 		    method: 'GET',
 		    data: {
 		        s: row_data,
