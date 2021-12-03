@@ -8,7 +8,7 @@
 
 ## 简介
 
-> “easyScholar” 是踩在了巨人的肩膀上，利用了Github上开源的CCF插件二次制作而成，在此非常感谢作者的无私奉献。如果您需要该版本，请转到以下位置进行浏览和下载：[show-rank](https://github.com/hnshhslsh/show-rank), [CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)
+> “easyScholar” 是踩在了巨人的肩膀上，利用了Github上开源的CCF插件二次制作而成，在此非常感谢作者的无私奉献。如果您需要该版本，请转到以下位置进行浏览和下载：[CCFrank4dblp](https://github.com/WenyanLiu/CCFrank4dblp)
 
 **easyScholar** 是一款让**科研更加方便**的浏览器扩展，它的功能特色有：
 
@@ -325,6 +325,7 @@
 - XDU：《关于发布《西安电子科技大学高水平期刊目录（2021年）》的通知》，英文约175种，中文约300种。
 - 百度翻译接口：https://api.fanyi.baidu.com/
 - 谷歌翻译接口：https://translate.googleapis.com/translate_a
+- 腾讯翻译接口：https://cloud.tencent.com/document/product/551/15619
 
 ## 更新日志
 
@@ -361,6 +362,4 @@
 | 2021.11.21 |          谷歌商店用户达到1000人，edge商店达到1612人          |    全体用户    |
 | 2021.11.25 |         支持[readpaper](https://readpaper.com/)网站          |   Nixiak-nan   |
 | 2021.11.26 |          支持西安电子科技大学，支持翻译功能（V4.1）          |   Nixiak-nan   |
-
-
-
+| 2021.11.27 |      支持腾讯翻译源，设置翻译位置，隐藏翻译结果（V4.2）      |   Nixiak-nan   |
