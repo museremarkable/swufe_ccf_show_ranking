@@ -90,30 +90,7 @@ $("#saveTranslateSetting").click(function(){
 });
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse){
-	if(request.action == "trans_baidu" || request.action == "trans_tengxun"){
-		let url2 ;
-		if(request.action == "trans_baidu"){
-			url2 = 'http://47.115.128.78:7060/baidutranslate';
-		}else if(request.action == "trans_tengxun"){
-			url2 = 'http://47.115.128.78:7060/tengxuntranslate';
-		}
-		
-		let row_data = request.data;
-		if(row_data.length > 1500){
-			return "当前选择的字符数为" + row_data.length + "，已经超过1500，请缩小范围选择。";
-		}
-		$.ajax({
-		    url: url2,
-		    method: 'GET',
-		    data: {
-		        s: row_data,
-		    },
-		}).then(function(result){
-			sendResponse(result);
-		}, function(){
-			sendResponse("服务暂时不可用，请稍后再试，若长时间未恢复，请及时和开发者联系：zhangxiangnan0906@outlook.com，或更换谷歌翻译接口");
-		});
-	}else if(request.action == "trans_google"){
+	if(request.action == "trans_google"){
 		let row_data = request.data;
 		let flag = 0;
 		let tl2 ;
@@ -142,6 +119,31 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse){
 		}, function(){
 			sendResponse("服务暂时不可用，有可能被谷歌禁止，请等3小时后再试，若长时间未恢复，请及时和开发者联系：zhangxiangnan0906@outlook.com");
 		});
+	}else {
+		let url2 ;
+		if(request.action == "trans_baidu"){
+			url2 = 'http://47.115.128.78:7060/baidutranslate';
+		}else if(request.action == "trans_tengxun"){
+			url2 = 'http://47.115.128.78:7060/tengxuntranslate';
+		}else if (request.action == "trans_caiyun"){
+			url2 = 'http://47.115.128.78:7060/caiyuntranslate';
+		}
+		
+		let row_data = request.data;
+		if(row_data.length > 1500){
+			return "当前选择的字符数为" + row_data.length + "，已经超过1500，请缩小范围选择。";
+		}
+		$.ajax({
+		    url: url2,
+		    method: 'GET',
+		    data: {
+		        s: row_data,
+		    },
+		}).then(function(result){
+			sendResponse(result);
+		}, function(){
+			sendResponse("服务暂时不可用，请稍后再试，若长时间未恢复，请及时和开发者联系：zhangxiangnan0906@outlook.com，或更换谷歌翻译接口");
+		});	
 	}
 	return true;
 });

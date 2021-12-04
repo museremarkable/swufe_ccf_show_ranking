@@ -49,6 +49,9 @@ function getTranslate(row_data) {
 	}else if (translateWhere == "tengxun"){
 		action = "trans_tengxun";
 		actionNormal = "腾讯翻译";
+	}else if (translateWhere == "caiyun"){
+		action = "trans_caiyun";
+		actionNormal = "彩云小译";
 	}
 	
 	// 确定翻译位置
