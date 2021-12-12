@@ -196,7 +196,7 @@ function start(){
 		scholar.run();
 	} else if (location.href.startsWith(
 			"https://webvpn.swufe.edu.cn/https/77726476706e69737468656265737421fbf952d2243e635930068cb8/kns8/defaultresult/index"
-		) || location.href.startsWith("https://kns.cnki.net/kns8/defaultresult")) {
+		) || location.href.startsWith("https://kns.cnki.net/kns8/defaultresult") || location.href.startsWith("https://kns.cnki.net/KNS8/AdvSearch")) {
 		if(optionCheckd.includes("cufe")){
 			zhiwang.rankingSpanProvider.push(cufe.getRankingSpan);	
 		}
