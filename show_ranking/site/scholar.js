@@ -1,5 +1,3 @@
-
-
 const scholar = {};
 
 scholar.rankSpanList = [];
@@ -12,7 +10,9 @@ scholar.run = function() {
 		scholar.appendRank();
 	} else if (url == "/citations") {
 		scholar.appendRanks();
-		document.getElementById("gsc_bpf_more").addEventListener("click", function (){scholar.appendRanks();}, false);
+		document.getElementById("gsc_bpf_more").addEventListener("click", function() {
+			scholar.appendRanks();
+		}, false);
 
 	}
 };
@@ -21,20 +21,20 @@ scholar.run = function() {
  *  @param numberMillis -- 要睡眠的毫秒数
  */
 function sleep(numberMillis) {
-    var now = new Date();
-    var exitTime = now.getTime() + numberMillis;
-    while (true) {
-        now = new Date();
-        if (now.getTime() > exitTime)
-            return;
-    }
+	var now = new Date();
+	var exitTime = now.getTime() + numberMillis;
+	while (true) {
+		now = new Date();
+		if (now.getTime() > exitTime)
+			return;
+	}
 }
 
 
 scholar.appendRank = function() {
 	let elements = $("#gs_res_ccl_mid > div > div.gs_ri");
 	elements.each(function() {
-		let node = $(this).find("h3 > a");
+		let node = $(this).find("h3 > a:first");	// 加first，不然和sci-hub 插件冲突
 		let title = node.text().replace(/[^A-z]/g, " ");
 		let data = $(this)
 			.find("div.gs_a")
@@ -56,7 +56,7 @@ scholar.appendRank = function() {
 scholar.appendRanks = function() {
 	let elements = $("tr.gsc_a_tr");
 	elements.each(function() {
-		let node = $(this).find("td.gsc_a_t > a");
+		let node = $(this).find("td.gsc_a_t > a:first");	// 加first，不然和sci-hub 插件冲突
 		if (!node.next().hasClass("ccf-ranking")) {
 			let title = node.text().replace(/[^A-z]/g, " ");
 			let author = $(this)
@@ -76,8 +76,9 @@ function fetchRank(node, title, author, year, journal, q_key) {
 
 
 	if (journal != null) {
+		console.log(title);
 		journal_str = journal[0];
-		if (journal_str.match(/.*?(?=,)/)){
+		if (journal_str.match(/.*?(?=,)/)) {
 			journal_str = journal_str.match(/.*?(?=,)/)[0];
 		}
 		if (journal_str.match("…") === null) {
@@ -89,11 +90,11 @@ function fetchRank(node, title, author, year, journal, q_key) {
 			// var sleep_time = Math.floor(Math.random());
 			sleep(sleep_time);
 			if (q_key) {
-				if(q_key.toString().match(/citation/)){
+				if (q_key.toString().match(/citation/)) {
 					cite_api_format = q_key;
 					var cite_xhr = new XMLHttpRequest();
 					cite_xhr.open("GET", cite_api_format, true);
-					cite_xhr.onreadystatechange = function () {
+					cite_xhr.onreadystatechange = function() {
 						if (cite_xhr.readyState == 4) {
 							var resp = cite_xhr.responseText;
 							if (resp) {
@@ -101,6 +102,7 @@ function fetchRank(node, title, author, year, journal, q_key) {
 								if (journal) {
 									journal_str = journal[2];
 									for (let getRankSpan of scholar.rankSpanListSwufe) {
+										console.log(title);
 										$(node).after(getRankSpan(journal_str.toUpperCase()));
 									}
 								}
@@ -108,18 +110,17 @@ function fetchRank(node, title, author, year, journal, q_key) {
 						}
 					}
 					cite_xhr.send();
-				}
-				else {
+				} else {
 					let code = q_key[0];
 					cite_api_format = document.location.hostname + "?q=info:" + code +
 						":scholar.google.com/&output=cite&scirp=0&hl=zh-CN";
 					var cite_xhr = new XMLHttpRequest();
 					cite_xhr.open("GET", cite_api_format, true);
-					cite_xhr.onreadystatechange = function () {
+					cite_xhr.onreadystatechange = function() {
 						if (cite_xhr.readyState == 4) {
 							var resp = cite_xhr.responseText;
 							if (resp) {
-								var journal = resp.match(/(?<=]..).*?(?=,|\.)/);								
+								var journal = resp.match(/(?<=]..).*?(?=,|\.)/);
 								if (journal) {
 									journal_str = journal[0];
 									for (let getRankSpan of scholar.rankSpanListSwufe) {
